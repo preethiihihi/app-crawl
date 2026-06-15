@@ -1,0 +1,3432 @@
+{
+  "app_package": "com.advanta.croppulse.stage",
+  "app_activity": "com.advanta.croppulse.MainActivity",
+  "visited_elements": [
+    "8ad5e14a737c2ab87557db3561875158_el_framelayout_4",
+    "8ad5e14a737c2ab87557db3561875158_el_button_11",
+    "8b585b134687a240ba38a5202f6930ec_el_framelayout_4",
+    "8b585b134687a240ba38a5202f6930ec_el_view_11",
+    "8ad5e14a737c2ab87557db3561875158_insights_12",
+    "8ad5e14a737c2ab87557db3561875158_view_by____field_count_clear_all_17",
+    "8ad5e14a737c2ab87557db3561875158_total_fields_19",
+    "8ad5e14a737c2ab87557db3561875158_crop_20",
+    "8ad5e14a737c2ab87557db3561875158_regions_21",
+    "8ad5e14a737c2ab87557db3561875158_284_25",
+    "8ad5e14a737c2ab87557db3561875158_6_26",
+    "8ad5e14a737c2ab87557db3561875158_11_27",
+    "8ad5e14a737c2ab87557db3561875158_418_21_acre_28",
+    "8ad5e14a737c2ab87557db3561875158_field_count_29",
+    "8ad5e14a737c2ab87557db3561875158_coverage__acres__30",
+    "8ad5e14a737c2ab87557db3561875158_crop_31",
+    "8ad5e14a737c2ab87557db3561875158_all_crops_32",
+    "8ad5e14a737c2ab87557db3561875158_field_corn_34",
+    "d906ac3754d8283bc922ff0ff6ce4026_el_framelayout_4",
+    "d906ac3754d8283bc922ff0ff6ce4026_el_button_11",
+    "8b585b134687a240ba38a5202f6930ec_advanta_farm_13",
+    "8b585b134687a240ba38a5202f6930ec_analytics_14",
+    "8b585b134687a240ba38a5202f6930ec_my_account_16",
+    "934ea317ec0af99c58c122c98e788845_el_framelayout_4",
+    "934ea317ec0af99c58c122c98e788845_el_button_9",
+    "d906ac3754d8283bc922ff0ff6ce4026_insights_12",
+    "d906ac3754d8283bc922ff0ff6ce4026_field_corn_clear_all_17",
+    "d906ac3754d8283bc922ff0ff6ce4026_total_fields_19",
+    "d906ac3754d8283bc922ff0ff6ce4026_crop_20",
+    "d906ac3754d8283bc922ff0ff6ce4026_regions_21",
+    "d906ac3754d8283bc922ff0ff6ce4026_284_25",
+    "d906ac3754d8283bc922ff0ff6ce4026_6_26",
+    "d906ac3754d8283bc922ff0ff6ce4026_11_27",
+    "d906ac3754d8283bc922ff0ff6ce4026_418_21_acre_28",
+    "d906ac3754d8283bc922ff0ff6ce4026_field_count_29",
+    "62130f7d22430aca6d6f1a1bfcfebe19_el_framelayout_4",
+    "62130f7d22430aca6d6f1a1bfcfebe19_el_button_11",
+    "8b585b134687a240ba38a5202f6930ec_dispatch_history__6__17",
+    "e298d1a4620ab2b71cfb305f76096c0b_el_framelayout_4",
+    "3f26afc02cb242122cd0b55e23d76863_el_framelayout_4",
+    "3f26afc02cb242122cd0b55e23d76863_el_button_9",
+    "e298d1a4620ab2b71cfb305f76096c0b_el_button_9",
+    "62130f7d22430aca6d6f1a1bfcfebe19_insights_12",
+    "62130f7d22430aca6d6f1a1bfcfebe19_view_by____field_count_clear_all_17",
+    "62130f7d22430aca6d6f1a1bfcfebe19_total_fields_19",
+    "62130f7d22430aca6d6f1a1bfcfebe19_crop_20",
+    "62130f7d22430aca6d6f1a1bfcfebe19_regions_21",
+    "62130f7d22430aca6d6f1a1bfcfebe19_284_25",
+    "62130f7d22430aca6d6f1a1bfcfebe19_6_26",
+    "62130f7d22430aca6d6f1a1bfcfebe19_11_27",
+    "62130f7d22430aca6d6f1a1bfcfebe19_418_21_acre_28",
+    "62130f7d22430aca6d6f1a1bfcfebe19_field_count_29",
+    "62130f7d22430aca6d6f1a1bfcfebe19_coverage__acres__30",
+    "62130f7d22430aca6d6f1a1bfcfebe19_crop_31",
+    "62130f7d22430aca6d6f1a1bfcfebe19_all_crops_32",
+    "62130f7d22430aca6d6f1a1bfcfebe19_305_46_acres_33",
+    "62130f7d22430aca6d6f1a1bfcfebe19_field_corn_35",
+    "d906ac3754d8283bc922ff0ff6ce4026_coverage__acres__30",
+    "62130f7d22430aca6d6f1a1bfcfebe19_grain_sorghum_36",
+    "d906ac3754d8283bc922ff0ff6ce4026_crop_31",
+    "d906ac3754d8283bc922ff0ff6ce4026_field_corn_32",
+    "d906ac3754d8283bc922ff0ff6ce4026_305_46_acres_33",
+    "d906ac3754d8283bc922ff0ff6ce4026_field_corn_35",
+    "d906ac3754d8283bc922ff0ff6ce4026_forage_sorghum_36",
+    "d906ac3754d8283bc922ff0ff6ce4026_grain_sorghum_37",
+    "d906ac3754d8283bc922ff0ff6ce4026_paddy_38",
+    "d906ac3754d8283bc922ff0ff6ce4026_forages_39",
+    "d906ac3754d8283bc922ff0ff6ce4026_brinjal_40",
+    "24d537129aff788deaf44dcb5af87113_el_framelayout_4",
+    "24d537129aff788deaf44dcb5af87113_el_button_11",
+    "8b585b134687a240ba38a5202f6930ec_check_in_history_18",
+    "2ea57f86347efaffd2a5fadabcee684f_el_framelayout_4",
+    "2ea57f86347efaffd2a5fadabcee684f_el_button_9",
+    "24d537129aff788deaf44dcb5af87113_insights_12",
+    "24d537129aff788deaf44dcb5af87113_brinjal_____nandyal_clear_all_17",
+    "24d537129aff788deaf44dcb5af87113_total_fields_19",
+    "24d537129aff788deaf44dcb5af87113_crop_20",
+    "24d537129aff788deaf44dcb5af87113_regions_21",
+    "24d537129aff788deaf44dcb5af87113_284_25",
+    "24d537129aff788deaf44dcb5af87113_6_26",
+    "24d537129aff788deaf44dcb5af87113_11_27",
+    "24d537129aff788deaf44dcb5af87113_418_21_acre_28",
+    "24d537129aff788deaf44dcb5af87113_field_count_29",
+    "62130f7d22430aca6d6f1a1bfcfebe19_forage_sorghum_37",
+    "d906ac3754d8283bc922ff0ff6ce4026_prodn__code_41",
+    "d906ac3754d8283bc922ff0ff6ce4026_view_42",
+    "3100a771a1c11e443de091aad25f95d7_el_framelayout_4",
+    "3100a771a1c11e443de091aad25f95d7_el_button_11",
+    "8b585b134687a240ba38a5202f6930ec_pending_fields_19",
+    "e364f68b3c1347969aff48c2c64e2370_el_framelayout_4",
+    "2ad050300b3a5b95ae4cce06633c30cc_el_framelayout_4",
+    "2ad050300b3a5b95ae4cce06633c30cc_el_button_9",
+    "e364f68b3c1347969aff48c2c64e2370_el_button_9",
+    "3100a771a1c11e443de091aad25f95d7_insights_12",
+    "3100a771a1c11e443de091aad25f95d7_forage_sorghum_clear_all_17",
+    "3100a771a1c11e443de091aad25f95d7_total_fields_19",
+    "3100a771a1c11e443de091aad25f95d7_crop_20",
+    "3100a771a1c11e443de091aad25f95d7_regions_21",
+    "3100a771a1c11e443de091aad25f95d7_284_25",
+    "3100a771a1c11e443de091aad25f95d7_6_26"
+  ],
+  "stack": [
+    {
+      "node_id": "screen_8ad5e14a737c2ab87557db3561875158",
+      "fingerprint": "8ad5e14a737c2ab87557db3561875158",
+      "navigation_path": []
+    },
+    {
+      "node_id": "screen_d906ac3754d8283bc922ff0ff6ce4026",
+      "fingerprint": "d906ac3754d8283bc922ff0ff6ce4026",
+      "navigation_path": [
+        {
+          "type": "click",
+          "selector": "~Field Corn",
+          "bounds": "[775,1419][1034,1482]"
+        }
+      ]
+    },
+    {
+      "node_id": "screen_3100a771a1c11e443de091aad25f95d7",
+      "fingerprint": "3100a771a1c11e443de091aad25f95d7",
+      "navigation_path": [
+        {
+          "type": "click",
+          "selector": "~Field Corn",
+          "bounds": "[775,1419][1034,1482]"
+        },
+        {
+          "type": "click",
+          "selector": "~View",
+          "bounds": "[974,2034][1164,2166]"
+        }
+      ]
+    }
+  ],
+  "nodes": {
+    "8ad5e14a737c2ab87557db3561875158": {
+      "node_id": "screen_8ad5e14a737c2ab87557db3561875158",
+      "fingerprint": "8ad5e14a737c2ab87557db3561875158",
+      "elements": [
+        {
+          "element_id": "el_framelayout_4",
+          "class": "android.widget.FrameLayout",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[0,0][1260,2800]",
+          "selector": "xpath=//android.widget.FrameLayout[@bounds='[0,0][1260,2800]']",
+          "is_input": false
+        },
+        {
+          "element_id": "el_button_11",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[0,108][168,276]",
+          "selector": "xpath=//android.widget.Button[@bounds='[0,108][168,276]']",
+          "is_input": false
+        },
+        {
+          "element_id": "insights_12",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Insights",
+          "bounds": "[168,162][1260,222]",
+          "selector": "~Insights",
+          "is_input": false
+        },
+        {
+          "element_id": "view_by____field_count_clear_all_17",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "View by :  Field Count\nClear All",
+          "bounds": "[0,951][1260,1095]",
+          "selector": "~View by :  Field Count\nClear All",
+          "is_input": false
+        },
+        {
+          "element_id": "total_fields_19",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Total Fields",
+          "bounds": "[133,372][327,423]",
+          "selector": "~Total Fields",
+          "is_input": false
+        },
+        {
+          "element_id": "crop_20",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Crop",
+          "bounds": "[590,372][670,423]",
+          "selector": "~Crop",
+          "is_input": false
+        },
+        {
+          "element_id": "regions_21",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Regions",
+          "bounds": "[962,372][1098,423]",
+          "selector": "~Regions",
+          "is_input": false
+        },
+        {
+          "element_id": "284_25",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "284",
+          "bounds": "[193,567][267,627]",
+          "selector": "~284",
+          "is_input": false
+        },
+        {
+          "element_id": "6_26",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "6",
+          "bounds": "[618,567][642,627]",
+          "selector": "~6",
+          "is_input": false
+        },
+        {
+          "element_id": "11_27",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "11",
+          "bounds": "[1005,567][1055,627]",
+          "selector": "~11",
+          "is_input": false
+        },
+        {
+          "element_id": "418_21_acre_28",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "418.21 acre",
+          "bounds": "[139,627][321,675]",
+          "selector": "~418.21 acre",
+          "is_input": false
+        },
+        {
+          "element_id": "field_count_29",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Field Count",
+          "bounds": "[72,795][630,927]",
+          "selector": "~Field Count",
+          "is_input": false
+        },
+        {
+          "element_id": "coverage__acres__30",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Coverage (acres)",
+          "bounds": "[630,795][1188,927]",
+          "selector": "~Coverage (acres)",
+          "is_input": false
+        },
+        {
+          "element_id": "crop_31",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Crop",
+          "bounds": "[96,1191][201,1260]",
+          "selector": "~Crop",
+          "is_input": false
+        },
+        {
+          "element_id": "all_crops_32",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "All Crops",
+          "bounds": "[96,1266][223,1308]",
+          "selector": "~All Crops",
+          "is_input": false
+        },
+        {
+          "element_id": "field_corn_34",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Field Corn",
+          "bounds": "[775,1419][1034,1482]",
+          "selector": "~Field Corn",
+          "is_input": false
+        },
+        {
+          "element_id": "grain_sorghum_35",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Grain Sorghum",
+          "bounds": "[775,1506][1113,1569]",
+          "selector": "~Grain Sorghum",
+          "is_input": false
+        },
+        {
+          "element_id": "forage_sorghum_36",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Forage Sorghum",
+          "bounds": "[775,1593][1140,1656]",
+          "selector": "~Forage Sorghum",
+          "is_input": false
+        },
+        {
+          "element_id": "forages_37",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Forages",
+          "bounds": "[775,1680][999,1743]",
+          "selector": "~Forages",
+          "is_input": false
+        },
+        {
+          "element_id": "paddy_38",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Paddy",
+          "bounds": "[775,1767][968,1830]",
+          "selector": "~Paddy",
+          "is_input": false
+        },
+        {
+          "element_id": "brinjal_39",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Brinjal",
+          "bounds": "[775,1854][970,1917]",
+          "selector": "~Brinjal",
+          "is_input": false
+        },
+        {
+          "element_id": "regions_40",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Regions",
+          "bounds": "[96,2142][277,2211]",
+          "selector": "~Regions",
+          "is_input": false
+        },
+        {
+          "element_id": "all_regions_41",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "All Regions",
+          "bounds": "[96,2217][254,2259]",
+          "selector": "~All Regions",
+          "is_input": false
+        },
+        {
+          "element_id": "nandyal_43",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Nandyal",
+          "bounds": "[732,2289][958,2352]",
+          "selector": "~Nandyal",
+          "is_input": false
+        },
+        {
+          "element_id": "rajahmundry_44",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Rajahmundry",
+          "bounds": "[732,2352][1041,2415]",
+          "selector": "~Rajahmundry",
+          "is_input": false
+        },
+        {
+          "element_id": "kurnool_45",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Kurnool",
+          "bounds": "[732,2415][951,2478]",
+          "selector": "~Kurnool",
+          "is_input": false
+        },
+        {
+          "element_id": "bagalakot_46",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Bagalakot",
+          "bounds": "[732,2478][989,2515]",
+          "selector": "~Bagalakot",
+          "is_input": false
+        },
+        {
+          "element_id": "insights_48",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Insights",
+          "bounds": "[135,2539][342,2722]",
+          "selector": "~Insights",
+          "is_input": false
+        },
+        {
+          "element_id": "my_fields_49",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "My Fields",
+          "bounds": "[516,2539][748,2722]",
+          "selector": "~My Fields",
+          "is_input": false
+        },
+        {
+          "element_id": "reports_50",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Reports",
+          "bounds": "[922,2539][1125,2722]",
+          "selector": "~Reports",
+          "is_input": false
+        }
+      ],
+      "navigation_path": []
+    },
+    "8b585b134687a240ba38a5202f6930ec": {
+      "node_id": "screen_8b585b134687a240ba38a5202f6930ec",
+      "fingerprint": "8b585b134687a240ba38a5202f6930ec",
+      "elements": [
+        {
+          "element_id": "el_framelayout_4",
+          "class": "android.widget.FrameLayout",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[0,0][1260,2800]",
+          "selector": "xpath=//android.widget.FrameLayout[@bounds='[0,0][1260,2800]']",
+          "is_input": false
+        },
+        {
+          "element_id": "el_view_11",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[48,147][120,219]",
+          "selector": "xpath=//android.view.View[@bounds='[48,147][120,219]']",
+          "is_input": false
+        },
+        {
+          "element_id": "advanta_farm_13",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Advanta Farm",
+          "bounds": "[241,144][587,222]",
+          "selector": "~Advanta Farm",
+          "is_input": false
+        },
+        {
+          "element_id": "analytics_14",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Analytics",
+          "bounds": "[587,144][817,222]",
+          "selector": "~Analytics",
+          "is_input": false
+        },
+        {
+          "element_id": "my_account_16",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "My Account",
+          "bounds": "[0,318][912,510]",
+          "selector": "~My Account",
+          "is_input": false
+        },
+        {
+          "element_id": "dispatch_history__6__17",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Dispatch History\n(6)",
+          "bounds": "[0,510][912,702]",
+          "selector": "~Dispatch History\n(6)",
+          "is_input": false
+        },
+        {
+          "element_id": "check_in_history_18",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Check-in History",
+          "bounds": "[0,702][912,894]",
+          "selector": "~Check-in History",
+          "is_input": false
+        },
+        {
+          "element_id": "pending_fields_19",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Pending Fields",
+          "bounds": "[0,894][912,1086]",
+          "selector": "~Pending Fields",
+          "is_input": false
+        },
+        {
+          "element_id": "pld_requests_20",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "PLD Requests",
+          "bounds": "[0,1086][912,1278]",
+          "selector": "~PLD Requests",
+          "is_input": false
+        },
+        {
+          "element_id": "log_out_21",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Log Out",
+          "bounds": "[48,2215][864,2359]",
+          "selector": "~Log Out",
+          "is_input": false
+        },
+        {
+          "element_id": "app_version_1_0_14_stage_22",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "App Version 1.0.14-stage",
+          "bounds": "[212,2407][700,2467]",
+          "selector": "~App Version 1.0.14-stage",
+          "is_input": false
+        },
+        {
+          "element_id": "insights_23",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Insights",
+          "bounds": "[135,2539][342,2722]",
+          "selector": "~Insights",
+          "is_input": false
+        },
+        {
+          "element_id": "my_fields_24",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "My Fields",
+          "bounds": "[516,2539][748,2722]",
+          "selector": "~My Fields",
+          "is_input": false
+        },
+        {
+          "element_id": "reports_25",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Reports",
+          "bounds": "[922,2539][1125,2722]",
+          "selector": "~Reports",
+          "is_input": false
+        }
+      ],
+      "navigation_path": [
+        {
+          "type": "click",
+          "selector": "xpath=//android.widget.Button[@bounds='[0,108][168,276]']",
+          "bounds": "[0,108][168,276]"
+        }
+      ]
+    },
+    "d906ac3754d8283bc922ff0ff6ce4026": {
+      "node_id": "screen_d906ac3754d8283bc922ff0ff6ce4026",
+      "fingerprint": "d906ac3754d8283bc922ff0ff6ce4026",
+      "elements": [
+        {
+          "element_id": "el_framelayout_4",
+          "class": "android.widget.FrameLayout",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[0,0][1260,2800]",
+          "selector": "xpath=//android.widget.FrameLayout[@bounds='[0,0][1260,2800]']",
+          "is_input": false
+        },
+        {
+          "element_id": "el_button_11",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[0,108][168,276]",
+          "selector": "xpath=//android.widget.Button[@bounds='[0,108][168,276]']",
+          "is_input": false
+        },
+        {
+          "element_id": "insights_12",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Insights",
+          "bounds": "[168,162][1260,222]",
+          "selector": "~Insights",
+          "is_input": false
+        },
+        {
+          "element_id": "field_corn_clear_all_17",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Field Corn\nClear All",
+          "bounds": "[0,951][1260,1095]",
+          "selector": "~Field Corn\nClear All",
+          "is_input": false
+        },
+        {
+          "element_id": "total_fields_19",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Total Fields",
+          "bounds": "[133,372][327,423]",
+          "selector": "~Total Fields",
+          "is_input": false
+        },
+        {
+          "element_id": "crop_20",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Crop",
+          "bounds": "[590,372][670,423]",
+          "selector": "~Crop",
+          "is_input": false
+        },
+        {
+          "element_id": "regions_21",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Regions",
+          "bounds": "[962,372][1098,423]",
+          "selector": "~Regions",
+          "is_input": false
+        },
+        {
+          "element_id": "284_25",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "284",
+          "bounds": "[193,567][267,627]",
+          "selector": "~284",
+          "is_input": false
+        },
+        {
+          "element_id": "6_26",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "6",
+          "bounds": "[618,567][642,627]",
+          "selector": "~6",
+          "is_input": false
+        },
+        {
+          "element_id": "11_27",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "11",
+          "bounds": "[1005,567][1055,627]",
+          "selector": "~11",
+          "is_input": false
+        },
+        {
+          "element_id": "418_21_acre_28",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "418.21 acre",
+          "bounds": "[139,627][321,675]",
+          "selector": "~418.21 acre",
+          "is_input": false
+        },
+        {
+          "element_id": "field_count_29",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Field Count",
+          "bounds": "[72,795][630,927]",
+          "selector": "~Field Count",
+          "is_input": false
+        },
+        {
+          "element_id": "coverage__acres__30",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Coverage (acres)",
+          "bounds": "[630,795][1188,927]",
+          "selector": "~Coverage (acres)",
+          "is_input": false
+        },
+        {
+          "element_id": "crop_31",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Crop",
+          "bounds": "[96,1191][201,1260]",
+          "selector": "~Crop",
+          "is_input": false
+        },
+        {
+          "element_id": "field_corn_32",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Field Corn",
+          "bounds": "[96,1266][238,1308]",
+          "selector": "~Field Corn",
+          "is_input": false
+        },
+        {
+          "element_id": "305_46_acres_33",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "305.46 acres",
+          "bounds": "[114,1356][305,1395]",
+          "selector": "~305.46 acres",
+          "is_input": false
+        },
+        {
+          "element_id": "field_corn_35",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Field Corn",
+          "bounds": "[775,1419][1034,1482]",
+          "selector": "~Field Corn",
+          "is_input": false
+        },
+        {
+          "element_id": "forage_sorghum_36",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Forage Sorghum",
+          "bounds": "[775,1506][1140,1569]",
+          "selector": "~Forage Sorghum",
+          "is_input": false
+        },
+        {
+          "element_id": "grain_sorghum_37",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Grain Sorghum",
+          "bounds": "[775,1593][1113,1656]",
+          "selector": "~Grain Sorghum",
+          "is_input": false
+        },
+        {
+          "element_id": "paddy_38",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Paddy",
+          "bounds": "[775,1680][968,1743]",
+          "selector": "~Paddy",
+          "is_input": false
+        },
+        {
+          "element_id": "forages_39",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Forages",
+          "bounds": "[775,1767][999,1830]",
+          "selector": "~Forages",
+          "is_input": false
+        },
+        {
+          "element_id": "brinjal_40",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Brinjal",
+          "bounds": "[775,1854][970,1917]",
+          "selector": "~Brinjal",
+          "is_input": false
+        },
+        {
+          "element_id": "prodn__code_41",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Prodn. Code",
+          "bounds": "[144,2070][974,2130]",
+          "selector": "~Prodn. Code",
+          "is_input": false
+        },
+        {
+          "element_id": "view_42",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "View",
+          "bounds": "[974,2034][1164,2166]",
+          "selector": "~View",
+          "is_input": false
+        },
+        {
+          "element_id": "regions_43",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Regions",
+          "bounds": "[96,2310][277,2379]",
+          "selector": "~Regions",
+          "is_input": false
+        },
+        {
+          "element_id": "all_regions_44",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "All Regions",
+          "bounds": "[96,2385][254,2427]",
+          "selector": "~All Regions",
+          "is_input": false
+        },
+        {
+          "element_id": "nandyal_46",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Nandyal",
+          "bounds": "[732,2457][958,2515]",
+          "selector": "~Nandyal",
+          "is_input": false
+        },
+        {
+          "element_id": "insights_47",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Insights",
+          "bounds": "[135,2539][342,2722]",
+          "selector": "~Insights",
+          "is_input": false
+        },
+        {
+          "element_id": "my_fields_48",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "My Fields",
+          "bounds": "[516,2539][748,2722]",
+          "selector": "~My Fields",
+          "is_input": false
+        },
+        {
+          "element_id": "reports_49",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Reports",
+          "bounds": "[922,2539][1125,2722]",
+          "selector": "~Reports",
+          "is_input": false
+        }
+      ],
+      "navigation_path": [
+        {
+          "type": "click",
+          "selector": "~Field Corn",
+          "bounds": "[775,1419][1034,1482]"
+        }
+      ]
+    },
+    "934ea317ec0af99c58c122c98e788845": {
+      "node_id": "screen_934ea317ec0af99c58c122c98e788845",
+      "fingerprint": "934ea317ec0af99c58c122c98e788845",
+      "elements": [
+        {
+          "element_id": "el_framelayout_4",
+          "class": "android.widget.FrameLayout",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[0,0][1260,2800]",
+          "selector": "xpath=//android.widget.FrameLayout[@bounds='[0,0][1260,2800]']",
+          "is_input": false
+        },
+        {
+          "element_id": "el_button_9",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[24,120][168,264]",
+          "selector": "xpath=//android.widget.Button[@bounds='[24,120][168,264]']",
+          "is_input": false
+        },
+        {
+          "element_id": "my_account_10",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "My Account",
+          "bounds": "[168,155][1260,230]",
+          "selector": "~My Account",
+          "is_input": false
+        },
+        {
+          "element_id": "t_11",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "T",
+          "bounds": "[101,381][139,471]",
+          "selector": "~T",
+          "is_input": false
+        },
+        {
+          "element_id": "field_agent_12",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Field Agent",
+          "bounds": "[228,426][431,483]",
+          "selector": "~Field Agent",
+          "is_input": false
+        },
+        {
+          "element_id": "test_fa_1__internal__13",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "TEST FA-1 (INTERNAL)",
+          "bounds": "[228,354][676,414]",
+          "selector": "~TEST FA-1 (INTERNAL)",
+          "is_input": false
+        },
+        {
+          "element_id": "tpm_14",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "TPM",
+          "bounds": "[48,582][126,633]",
+          "selector": "~TPM",
+          "is_input": false
+        },
+        {
+          "element_id": "field_agent_15",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Field Agent",
+          "bounds": "[276,582][464,633]",
+          "selector": "~Field Agent",
+          "is_input": false
+        },
+        {
+          "element_id": "fields_16",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Fields",
+          "bounds": "[614,582][714,633]",
+          "selector": "~Fields",
+          "is_input": false
+        },
+        {
+          "element_id": "1_17",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "1",
+          "bounds": "[75,645][98,702]",
+          "selector": "~1",
+          "is_input": false
+        },
+        {
+          "element_id": "1_18",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "1",
+          "bounds": "[359,645][382,702]",
+          "selector": "~1",
+          "is_input": false
+        },
+        {
+          "element_id": "284_19",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "284",
+          "bounds": "[630,645][699,702]",
+          "selector": "~284",
+          "is_input": false
+        }
+      ],
+      "navigation_path": [
+        {
+          "type": "click",
+          "selector": "xpath=//android.widget.Button[@bounds='[0,108][168,276]']",
+          "bounds": "[0,108][168,276]"
+        },
+        {
+          "type": "click",
+          "selector": "~My Account",
+          "bounds": "[0,318][912,510]"
+        }
+      ]
+    },
+    "62130f7d22430aca6d6f1a1bfcfebe19": {
+      "node_id": "screen_62130f7d22430aca6d6f1a1bfcfebe19",
+      "fingerprint": "62130f7d22430aca6d6f1a1bfcfebe19",
+      "elements": [
+        {
+          "element_id": "el_framelayout_4",
+          "class": "android.widget.FrameLayout",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[0,0][1260,2800]",
+          "selector": "xpath=//android.widget.FrameLayout[@bounds='[0,0][1260,2800]']",
+          "is_input": false
+        },
+        {
+          "element_id": "el_button_11",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[0,108][168,276]",
+          "selector": "xpath=//android.widget.Button[@bounds='[0,108][168,276]']",
+          "is_input": false
+        },
+        {
+          "element_id": "insights_12",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Insights",
+          "bounds": "[168,162][1260,222]",
+          "selector": "~Insights",
+          "is_input": false
+        },
+        {
+          "element_id": "view_by____field_count_clear_all_17",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "View by :  Field Count\nClear All",
+          "bounds": "[0,951][1260,1095]",
+          "selector": "~View by :  Field Count\nClear All",
+          "is_input": false
+        },
+        {
+          "element_id": "total_fields_19",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Total Fields",
+          "bounds": "[133,372][327,423]",
+          "selector": "~Total Fields",
+          "is_input": false
+        },
+        {
+          "element_id": "crop_20",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Crop",
+          "bounds": "[590,372][670,423]",
+          "selector": "~Crop",
+          "is_input": false
+        },
+        {
+          "element_id": "regions_21",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Regions",
+          "bounds": "[962,372][1098,423]",
+          "selector": "~Regions",
+          "is_input": false
+        },
+        {
+          "element_id": "284_25",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "284",
+          "bounds": "[193,567][267,627]",
+          "selector": "~284",
+          "is_input": false
+        },
+        {
+          "element_id": "6_26",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "6",
+          "bounds": "[618,567][642,627]",
+          "selector": "~6",
+          "is_input": false
+        },
+        {
+          "element_id": "11_27",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "11",
+          "bounds": "[1005,567][1055,627]",
+          "selector": "~11",
+          "is_input": false
+        },
+        {
+          "element_id": "418_21_acre_28",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "418.21 acre",
+          "bounds": "[139,627][321,675]",
+          "selector": "~418.21 acre",
+          "is_input": false
+        },
+        {
+          "element_id": "field_count_29",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Field Count",
+          "bounds": "[72,795][630,927]",
+          "selector": "~Field Count",
+          "is_input": false
+        },
+        {
+          "element_id": "coverage__acres__30",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Coverage (acres)",
+          "bounds": "[630,795][1188,927]",
+          "selector": "~Coverage (acres)",
+          "is_input": false
+        },
+        {
+          "element_id": "crop_31",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Crop",
+          "bounds": "[96,1191][201,1260]",
+          "selector": "~Crop",
+          "is_input": false
+        },
+        {
+          "element_id": "all_crops_32",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "All Crops",
+          "bounds": "[96,1266][223,1308]",
+          "selector": "~All Crops",
+          "is_input": false
+        },
+        {
+          "element_id": "305_46_acres_33",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "305.46 acres",
+          "bounds": "[114,1356][305,1395]",
+          "selector": "~305.46 acres",
+          "is_input": false
+        },
+        {
+          "element_id": "field_corn_35",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Field Corn",
+          "bounds": "[775,1419][1034,1482]",
+          "selector": "~Field Corn",
+          "is_input": false
+        },
+        {
+          "element_id": "grain_sorghum_36",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Grain Sorghum",
+          "bounds": "[775,1506][1113,1569]",
+          "selector": "~Grain Sorghum",
+          "is_input": false
+        },
+        {
+          "element_id": "forage_sorghum_37",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Forage Sorghum",
+          "bounds": "[775,1593][1140,1656]",
+          "selector": "~Forage Sorghum",
+          "is_input": false
+        },
+        {
+          "element_id": "forages_38",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Forages",
+          "bounds": "[775,1680][999,1743]",
+          "selector": "~Forages",
+          "is_input": false
+        },
+        {
+          "element_id": "paddy_39",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Paddy",
+          "bounds": "[775,1767][968,1830]",
+          "selector": "~Paddy",
+          "is_input": false
+        },
+        {
+          "element_id": "brinjal_40",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Brinjal",
+          "bounds": "[775,1854][970,1917]",
+          "selector": "~Brinjal",
+          "is_input": false
+        },
+        {
+          "element_id": "regions_41",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Regions",
+          "bounds": "[96,2142][277,2211]",
+          "selector": "~Regions",
+          "is_input": false
+        },
+        {
+          "element_id": "all_regions_42",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "All Regions",
+          "bounds": "[96,2217][254,2259]",
+          "selector": "~All Regions",
+          "is_input": false
+        },
+        {
+          "element_id": "nandyal_44",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Nandyal",
+          "bounds": "[732,2289][958,2352]",
+          "selector": "~Nandyal",
+          "is_input": false
+        },
+        {
+          "element_id": "rajahmundry_45",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Rajahmundry",
+          "bounds": "[732,2352][1041,2415]",
+          "selector": "~Rajahmundry",
+          "is_input": false
+        },
+        {
+          "element_id": "kurnool_46",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Kurnool",
+          "bounds": "[732,2415][951,2478]",
+          "selector": "~Kurnool",
+          "is_input": false
+        },
+        {
+          "element_id": "bagalakot_47",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Bagalakot",
+          "bounds": "[732,2478][989,2515]",
+          "selector": "~Bagalakot",
+          "is_input": false
+        },
+        {
+          "element_id": "insights_49",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Insights",
+          "bounds": "[135,2539][342,2722]",
+          "selector": "~Insights",
+          "is_input": false
+        },
+        {
+          "element_id": "my_fields_50",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "My Fields",
+          "bounds": "[516,2539][748,2722]",
+          "selector": "~My Fields",
+          "is_input": false
+        },
+        {
+          "element_id": "reports_51",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Reports",
+          "bounds": "[922,2539][1125,2722]",
+          "selector": "~Reports",
+          "is_input": false
+        }
+      ],
+      "navigation_path": [
+        {
+          "type": "click",
+          "selector": "~Field Corn",
+          "bounds": "[775,1419][1034,1482]"
+        },
+        {
+          "type": "click",
+          "selector": "~Field Count",
+          "bounds": "[72,795][630,927]"
+        }
+      ]
+    },
+    "e298d1a4620ab2b71cfb305f76096c0b": {
+      "node_id": "screen_e298d1a4620ab2b71cfb305f76096c0b",
+      "fingerprint": "e298d1a4620ab2b71cfb305f76096c0b",
+      "elements": [
+        {
+          "element_id": "el_framelayout_4",
+          "class": "android.widget.FrameLayout",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[0,0][1260,2800]",
+          "selector": "xpath=//android.widget.FrameLayout[@bounds='[0,0][1260,2800]']",
+          "is_input": false
+        },
+        {
+          "element_id": "el_button_9",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[12,120][156,264]",
+          "selector": "xpath=//android.widget.Button[@bounds='[12,120][156,264]']",
+          "is_input": false
+        },
+        {
+          "element_id": "dispatch_history_10",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Dispatch History",
+          "bounds": "[216,156][1212,228]",
+          "selector": "~Dispatch History",
+          "is_input": false
+        },
+        {
+          "element_id": "166_12",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "166",
+          "bounds": "[228,360][323,438]",
+          "selector": "~166",
+          "is_input": false
+        },
+        {
+          "element_id": "dispatched_bags_13",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Dispatched Bags",
+          "bounds": "[228,438][510,489]",
+          "selector": "~Dispatched Bags",
+          "is_input": false
+        },
+        {
+          "element_id": "57_15",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "57",
+          "bounds": "[834,360][897,438]",
+          "selector": "~57",
+          "is_input": false
+        },
+        {
+          "element_id": "dispatched_acres_16",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Dispatched Acres",
+          "bounds": "[834,438][1127,489]",
+          "selector": "~Dispatched Acres",
+          "is_input": false
+        },
+        {
+          "element_id": "dispatched__6__17",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Dispatched (6)",
+          "bounds": "[78,573][485,690]",
+          "selector": "~Dispatched (6)",
+          "is_input": false
+        },
+        {
+          "element_id": "100037_10_06_26_3_batches_62_0_kg_20",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "100037\n10/06/26\n3 Batches\n62.0 kg",
+          "bounds": "[48,753][1212,1038]",
+          "selector": "~100037\n10/06/26\n3 Batches\n62.0 kg",
+          "is_input": false
+        },
+        {
+          "element_id": "100036_05_06_26_3_batches_56_0_kg_21",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "100036\n05/06/26\n3 Batches\n56.0 kg",
+          "bounds": "[48,1074][1212,1359]",
+          "selector": "~100036\n05/06/26\n3 Batches\n56.0 kg",
+          "is_input": false
+        },
+        {
+          "element_id": "100035_04_06_26_1_batches_1_0_kg_22",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "100035\n04/06/26\n1 Batches\n1.0 kg",
+          "bounds": "[48,1395][1212,1680]",
+          "selector": "~100035\n04/06/26\n1 Batches\n1.0 kg",
+          "is_input": false
+        },
+        {
+          "element_id": "100034_04_06_26_4_batches_91_0_kg_23",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "100034\n04/06/26\n4 Batches\n91.0 kg",
+          "bounds": "[48,1716][1212,2001]",
+          "selector": "~100034\n04/06/26\n4 Batches\n91.0 kg",
+          "is_input": false
+        },
+        {
+          "element_id": "100033_02_06_26_4_batches_75_0_kg_24",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "100033\n02/06/26\n4 Batches\n75.0 kg",
+          "bounds": "[48,2037][1212,2322]",
+          "selector": "~100033\n02/06/26\n4 Batches\n75.0 kg",
+          "is_input": false
+        },
+        {
+          "element_id": "100000_14_05_26_1_batches_24_0_kg_25",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "100000\n14/05/26\n1 Batches\n24.0 kg",
+          "bounds": "[48,2358][1212,2643]",
+          "selector": "~100000\n14/05/26\n1 Batches\n24.0 kg",
+          "is_input": false
+        }
+      ],
+      "navigation_path": [
+        {
+          "type": "click",
+          "selector": "xpath=//android.widget.Button[@bounds='[0,108][168,276]']",
+          "bounds": "[0,108][168,276]"
+        },
+        {
+          "type": "click",
+          "selector": "~Dispatch History\n(6)",
+          "bounds": "[0,510][912,702]"
+        }
+      ]
+    },
+    "3f26afc02cb242122cd0b55e23d76863": {
+      "node_id": "screen_3f26afc02cb242122cd0b55e23d76863",
+      "fingerprint": "3f26afc02cb242122cd0b55e23d76863",
+      "elements": [
+        {
+          "element_id": "el_framelayout_4",
+          "class": "android.widget.FrameLayout",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[0,0][1260,2800]",
+          "selector": "xpath=//android.widget.FrameLayout[@bounds='[0,0][1260,2800]']",
+          "is_input": false
+        },
+        {
+          "element_id": "el_button_9",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[12,120][156,264]",
+          "selector": "xpath=//android.widget.Button[@bounds='[12,120][156,264]']",
+          "is_input": false
+        },
+        {
+          "element_id": "rsma_no__100035_10",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "RSMA No. 100035",
+          "bounds": "[216,161][661,224]",
+          "selector": "~RSMA No. 100035",
+          "is_input": false
+        },
+        {
+          "element_id": "el_imageview_11",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[972,120][1116,264]",
+          "selector": "xpath=//android.widget.ImageView[@bounds='[972,120][1116,264]']",
+          "is_input": false
+        },
+        {
+          "element_id": "el_button_12",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[1116,120][1260,264]",
+          "selector": "xpath=//android.widget.Button[@bounds='[1116,120][1260,264]']",
+          "is_input": false
+        },
+        {
+          "element_id": "rsma_no__100035_15",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "RSMA no. 100035",
+          "bounds": "[234,372][636,441]",
+          "selector": "~RSMA no. 100035",
+          "is_input": false
+        },
+        {
+          "element_id": "04_06_26_16",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "04/06/26",
+          "bounds": "[261,480][406,528]",
+          "selector": "~04/06/26",
+          "is_input": false
+        },
+        {
+          "element_id": "__17",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "\u2022",
+          "bounds": "[445,480][456,528]",
+          "selector": "~\u2022",
+          "is_input": false
+        },
+        {
+          "element_id": "02_49_pm_18",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "02:49 PM",
+          "bounds": "[495,480][641,528]",
+          "selector": "~02:49 PM",
+          "is_input": false
+        },
+        {
+          "element_id": "__19",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "\u2022",
+          "bounds": "[680,480][692,528]",
+          "selector": "~\u2022",
+          "is_input": false
+        },
+        {
+          "element_id": "2_bags_20",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "2 bags",
+          "bounds": "[731,480][835,528]",
+          "selector": "~2 bags",
+          "is_input": false
+        },
+        {
+          "element_id": "net_weight_21",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Net Weight",
+          "bounds": "[48,585][514,645]",
+          "selector": "~Net Weight",
+          "is_input": false
+        },
+        {
+          "element_id": "1_0_kg_22",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "1.0 kg",
+          "bounds": "[514,585][1212,645]",
+          "selector": "~1.0 kg",
+          "is_input": false
+        },
+        {
+          "element_id": "total_bag_count_23",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Total bag count",
+          "bounds": "[48,669][514,729]",
+          "selector": "~Total bag count",
+          "is_input": false
+        },
+        {
+          "element_id": "2_24",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "2",
+          "bounds": "[514,669][1212,729]",
+          "selector": "~2",
+          "is_input": false
+        },
+        {
+          "element_id": "from__37aaxca1074e1zi__25",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "From (37AAXCA1074E1ZI)",
+          "bounds": "[216,816][659,867]",
+          "selector": "~From (37AAXCA1074E1ZI)",
+          "is_input": false
+        },
+        {
+          "element_id": "test_tpm__internal___advanta_enterprises_ltd__allagadda__ap__26",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "TEST TPM (INTERNAL), Advanta Enterprises Ltd, Allagadda (AP)",
+          "bounds": "[216,879][1212,999]",
+          "selector": "~TEST TPM (INTERNAL), Advanta Enterprises Ltd, Allagadda (AP)",
+          "is_input": false
+        },
+        {
+          "element_id": "to__37aaxca1074e1zi__27",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "To (37AAXCA1074E1ZI)",
+          "bounds": "[216,1041][615,1092]",
+          "selector": "~To (37AAXCA1074E1ZI)",
+          "is_input": false
+        },
+        {
+          "element_id": "sy_no_545_1__pullalacheruvu_mandal__komarolu__prakasam__andhra_pradesh__523373_28",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "SY.NO.545-1, PULLALACHERUVU MANDAL, Komarolu, Prakasam, Andhra Pradesh, 523373",
+          "bounds": "[216,1104][1212,1224]",
+          "selector": "~SY.NO.545-1, PULLALACHERUVU MANDAL, Komarolu, Prakasam, Andhra Pradesh, 523373",
+          "is_input": false
+        },
+        {
+          "element_id": "transport_details_29",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Transport Details",
+          "bounds": "[48,1368][408,1431]",
+          "selector": "~Transport Details",
+          "is_input": false
+        },
+        {
+          "element_id": "transporter_30",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Transporter",
+          "bounds": "[48,1488][514,1548]",
+          "selector": "~Transporter",
+          "is_input": false
+        },
+        {
+          "element_id": "gujju_tester_31",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "gujju tester",
+          "bounds": "[514,1488][1212,1548]",
+          "selector": "~gujju tester",
+          "is_input": false
+        },
+        {
+          "element_id": "truck_number_32",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Truck Number",
+          "bounds": "[48,1590][514,1650]",
+          "selector": "~Truck Number",
+          "is_input": false
+        },
+        {
+          "element_id": "82_33",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "82",
+          "bounds": "[514,1590][1212,1650]",
+          "selector": "~82",
+          "is_input": false
+        },
+        {
+          "element_id": "truck_moisture_34",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Truck Moisture",
+          "bounds": "[48,1692][514,1752]",
+          "selector": "~Truck Moisture",
+          "is_input": false
+        },
+        {
+          "element_id": "3_0___35",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "3.0 %",
+          "bounds": "[514,1692][1212,1752]",
+          "selector": "~3.0 %",
+          "is_input": false
+        },
+        {
+          "element_id": "truck_capacity_36",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Truck Capacity",
+          "bounds": "[48,1794][514,1854]",
+          "selector": "~Truck Capacity",
+          "is_input": false
+        },
+        {
+          "element_id": "72_0_mt_37",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "72.0 mt",
+          "bounds": "[514,1794][1212,1854]",
+          "selector": "~72.0 mt",
+          "is_input": false
+        },
+        {
+          "element_id": "lr_number_38",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "LR Number",
+          "bounds": "[48,1896][514,1956]",
+          "selector": "~LR Number",
+          "is_input": false
+        },
+        {
+          "element_id": "822_39",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "822",
+          "bounds": "[514,1896][1212,1956]",
+          "selector": "~822",
+          "is_input": false
+        },
+        {
+          "element_id": "lr_date_40",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "LR Date",
+          "bounds": "[48,1998][514,2058]",
+          "selector": "~LR Date",
+          "is_input": false
+        },
+        {
+          "element_id": "04_06_26_41",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "04/06/26",
+          "bounds": "[514,1998][1212,2058]",
+          "selector": "~04/06/26",
+          "is_input": false
+        },
+        {
+          "element_id": "no__of_batches_42",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "No. of batches",
+          "bounds": "[48,2202][373,2271]",
+          "selector": "~No. of batches",
+          "is_input": false
+        },
+        {
+          "element_id": "0012500b7a____field_corn__mz200___collapsed_44",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "0012500B7A \n\u2022\nField Corn (MZ200), Collapsed",
+          "bounds": "[51,2334][1209,2502]",
+          "selector": "~0012500B7A \n\u2022\nField Corn (MZ200), Collapsed",
+          "is_input": false
+        }
+      ],
+      "navigation_path": [
+        {
+          "type": "click",
+          "selector": "xpath=//android.widget.Button[@bounds='[0,108][168,276]']",
+          "bounds": "[0,108][168,276]"
+        },
+        {
+          "type": "click",
+          "selector": "~Dispatch History\n(6)",
+          "bounds": "[0,510][912,702]"
+        },
+        {
+          "type": "click",
+          "selector": "xpath=//android.widget.FrameLayout[@bounds='[0,0][1260,2800]']",
+          "bounds": "[0,0][1260,2800]"
+        }
+      ]
+    },
+    "24d537129aff788deaf44dcb5af87113": {
+      "node_id": "screen_24d537129aff788deaf44dcb5af87113",
+      "fingerprint": "24d537129aff788deaf44dcb5af87113",
+      "elements": [
+        {
+          "element_id": "el_framelayout_4",
+          "class": "android.widget.FrameLayout",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[0,0][1260,2800]",
+          "selector": "xpath=//android.widget.FrameLayout[@bounds='[0,0][1260,2800]']",
+          "is_input": false
+        },
+        {
+          "element_id": "el_button_11",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[0,108][168,276]",
+          "selector": "xpath=//android.widget.Button[@bounds='[0,108][168,276]']",
+          "is_input": false
+        },
+        {
+          "element_id": "insights_12",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Insights",
+          "bounds": "[168,162][1260,222]",
+          "selector": "~Insights",
+          "is_input": false
+        },
+        {
+          "element_id": "brinjal_____nandyal_clear_all_17",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Brinjal  \u2022  Nandyal\nClear All",
+          "bounds": "[0,951][1260,1095]",
+          "selector": "~Brinjal  \u2022  Nandyal\nClear All",
+          "is_input": false
+        },
+        {
+          "element_id": "total_fields_19",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Total Fields",
+          "bounds": "[133,372][327,423]",
+          "selector": "~Total Fields",
+          "is_input": false
+        },
+        {
+          "element_id": "crop_20",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Crop",
+          "bounds": "[590,372][670,423]",
+          "selector": "~Crop",
+          "is_input": false
+        },
+        {
+          "element_id": "regions_21",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Regions",
+          "bounds": "[962,372][1098,423]",
+          "selector": "~Regions",
+          "is_input": false
+        },
+        {
+          "element_id": "284_25",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "284",
+          "bounds": "[193,567][267,627]",
+          "selector": "~284",
+          "is_input": false
+        },
+        {
+          "element_id": "6_26",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "6",
+          "bounds": "[618,567][642,627]",
+          "selector": "~6",
+          "is_input": false
+        },
+        {
+          "element_id": "11_27",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "11",
+          "bounds": "[1005,567][1055,627]",
+          "selector": "~11",
+          "is_input": false
+        },
+        {
+          "element_id": "418_21_acre_28",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "418.21 acre",
+          "bounds": "[139,627][321,675]",
+          "selector": "~418.21 acre",
+          "is_input": false
+        },
+        {
+          "element_id": "field_count_29",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Field Count",
+          "bounds": "[72,795][630,927]",
+          "selector": "~Field Count",
+          "is_input": false
+        },
+        {
+          "element_id": "coverage__acres__30",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Coverage (acres)",
+          "bounds": "[630,795][1188,927]",
+          "selector": "~Coverage (acres)",
+          "is_input": false
+        },
+        {
+          "element_id": "crop_31",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Crop",
+          "bounds": "[96,1191][201,1260]",
+          "selector": "~Crop",
+          "is_input": false
+        },
+        {
+          "element_id": "brinjal_32",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Brinjal",
+          "bounds": "[96,1266][185,1308]",
+          "selector": "~Brinjal",
+          "is_input": false
+        },
+        {
+          "element_id": "0_01_acres_33",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "0.01 acres",
+          "bounds": "[114,1356][268,1395]",
+          "selector": "~0.01 acres",
+          "is_input": false
+        },
+        {
+          "element_id": "field_corn_35",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Field Corn",
+          "bounds": "[775,1419][1034,1482]",
+          "selector": "~Field Corn",
+          "is_input": false
+        },
+        {
+          "element_id": "forage_sorghum_36",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Forage Sorghum",
+          "bounds": "[775,1506][1140,1569]",
+          "selector": "~Forage Sorghum",
+          "is_input": false
+        },
+        {
+          "element_id": "grain_sorghum_37",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Grain Sorghum",
+          "bounds": "[775,1593][1113,1656]",
+          "selector": "~Grain Sorghum",
+          "is_input": false
+        },
+        {
+          "element_id": "paddy_38",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Paddy",
+          "bounds": "[775,1680][968,1743]",
+          "selector": "~Paddy",
+          "is_input": false
+        },
+        {
+          "element_id": "forages_39",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Forages",
+          "bounds": "[775,1767][999,1830]",
+          "selector": "~Forages",
+          "is_input": false
+        },
+        {
+          "element_id": "brinjal_40",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Brinjal",
+          "bounds": "[775,1854][970,1917]",
+          "selector": "~Brinjal",
+          "is_input": false
+        },
+        {
+          "element_id": "prodn__code_41",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Prodn. Code",
+          "bounds": "[144,2070][974,2130]",
+          "selector": "~Prodn. Code",
+          "is_input": false
+        },
+        {
+          "element_id": "view_42",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "View",
+          "bounds": "[974,2034][1164,2166]",
+          "selector": "~View",
+          "is_input": false
+        },
+        {
+          "element_id": "regions_43",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Regions",
+          "bounds": "[96,2318][277,2387]",
+          "selector": "~Regions",
+          "is_input": false
+        },
+        {
+          "element_id": "view_map_44",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "View Map",
+          "bounds": "[911,2310][1164,2394]",
+          "selector": "~View Map",
+          "is_input": false
+        },
+        {
+          "element_id": "nandyal_45",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Nandyal",
+          "bounds": "[96,2400][210,2442]",
+          "selector": "~Nandyal",
+          "is_input": false
+        },
+        {
+          "element_id": "nandyal_47",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Nandyal",
+          "bounds": "[732,2472][959,2515]",
+          "selector": "~Nandyal",
+          "is_input": false
+        },
+        {
+          "element_id": "insights_48",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Insights",
+          "bounds": "[135,2539][342,2722]",
+          "selector": "~Insights",
+          "is_input": false
+        },
+        {
+          "element_id": "my_fields_49",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "My Fields",
+          "bounds": "[516,2539][748,2722]",
+          "selector": "~My Fields",
+          "is_input": false
+        },
+        {
+          "element_id": "reports_50",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Reports",
+          "bounds": "[922,2539][1125,2722]",
+          "selector": "~Reports",
+          "is_input": false
+        }
+      ],
+      "navigation_path": [
+        {
+          "type": "click",
+          "selector": "~Field Corn",
+          "bounds": "[775,1419][1034,1482]"
+        },
+        {
+          "type": "click",
+          "selector": "~Brinjal",
+          "bounds": "[775,1854][970,1917]"
+        }
+      ]
+    },
+    "2ea57f86347efaffd2a5fadabcee684f": {
+      "node_id": "screen_2ea57f86347efaffd2a5fadabcee684f",
+      "fingerprint": "2ea57f86347efaffd2a5fadabcee684f",
+      "elements": [
+        {
+          "element_id": "el_framelayout_4",
+          "class": "android.widget.FrameLayout",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[0,0][1260,2800]",
+          "selector": "xpath=//android.widget.FrameLayout[@bounds='[0,0][1260,2800]']",
+          "is_input": false
+        },
+        {
+          "element_id": "el_button_9",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[12,120][156,264]",
+          "selector": "xpath=//android.widget.Button[@bounds='[12,120][156,264]']",
+          "is_input": false
+        },
+        {
+          "element_id": "check_in_activity_10",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Check in Activity",
+          "bounds": "[168,150][1260,234]",
+          "selector": "~Check in Activity",
+          "is_input": false
+        },
+        {
+          "element_id": "monthly_11",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Monthly",
+          "bounds": "[60,327][621,423]",
+          "selector": "~Monthly",
+          "is_input": false
+        },
+        {
+          "element_id": "season_12",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Season",
+          "bounds": "[639,327][1200,423]",
+          "selector": "~Season",
+          "is_input": false
+        },
+        {
+          "element_id": "showing__june_2026_13",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Showing: June 2026",
+          "bounds": "[36,450][1224,510]",
+          "selector": "~Showing: June 2026",
+          "is_input": false
+        },
+        {
+          "element_id": "my_metrics_jun__01_15__total_fields_0_visited_0_not_visited_0_check_ins_0_16",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "My Metrics\nJun (01-15)\nTotal Fields\n0\nVisited\n0\nNot Visited\n0\nCheck-Ins\n0",
+          "bounds": "[0,663][1260,1494]",
+          "selector": "~My Metrics\nJun (01-15)\nTotal Fields\n0\nVisited\n0\nNot Visited\n0\nCheck-Ins\n0",
+          "is_input": false
+        },
+        {
+          "element_id": "june__2026_sun_mon_tue_wed_thu_fri_sat_18",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "June, 2026\nSun\nMon\nTue\nWed\nThu\nFri\nSat",
+          "bounds": "[0,1542][1260,2776]",
+          "selector": "~June, 2026\nSun\nMon\nTue\nWed\nThu\nFri\nSat",
+          "is_input": false
+        },
+        {
+          "element_id": "el_button_19",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[36,1548][180,1692]",
+          "selector": "xpath=//android.widget.Button[@bounds='[36,1548][180,1692]']",
+          "is_input": false
+        },
+        {
+          "element_id": "el_button_20",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[1080,1548][1224,1692]",
+          "selector": "xpath=//android.widget.Button[@bounds='[1080,1548][1224,1692]']",
+          "is_input": false
+        },
+        {
+          "element_id": "1_24",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "1",
+          "bounds": "[218,1850][361,2054]",
+          "selector": "~1",
+          "is_input": false
+        },
+        {
+          "element_id": "2_25",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "2",
+          "bounds": "[388,1850][531,2054]",
+          "selector": "~2",
+          "is_input": false
+        },
+        {
+          "element_id": "3_26",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "3",
+          "bounds": "[558,1850][702,2054]",
+          "selector": "~3",
+          "is_input": false
+        },
+        {
+          "element_id": "4_27",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "4",
+          "bounds": "[729,1850][872,2054]",
+          "selector": "~4",
+          "is_input": false
+        },
+        {
+          "element_id": "5_28",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "5",
+          "bounds": "[899,1850][1042,2054]",
+          "selector": "~5",
+          "is_input": false
+        },
+        {
+          "element_id": "6_29",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "6",
+          "bounds": "[1069,1850][1212,2054]",
+          "selector": "~6",
+          "is_input": false
+        },
+        {
+          "element_id": "7_30",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "7",
+          "bounds": "[48,2099][191,2303]",
+          "selector": "~7",
+          "is_input": false
+        },
+        {
+          "element_id": "8_31",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "8",
+          "bounds": "[218,2099][361,2303]",
+          "selector": "~8",
+          "is_input": false
+        },
+        {
+          "element_id": "9_32",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "9",
+          "bounds": "[388,2099][531,2303]",
+          "selector": "~9",
+          "is_input": false
+        },
+        {
+          "element_id": "10_33",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "10",
+          "bounds": "[558,2099][702,2303]",
+          "selector": "~10",
+          "is_input": false
+        },
+        {
+          "element_id": "11_34",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "11",
+          "bounds": "[729,2099][872,2303]",
+          "selector": "~11",
+          "is_input": false
+        },
+        {
+          "element_id": "12_35",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "12",
+          "bounds": "[899,2099][1042,2303]",
+          "selector": "~12",
+          "is_input": false
+        },
+        {
+          "element_id": "13_36",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "13",
+          "bounds": "[1069,2099][1212,2303]",
+          "selector": "~13",
+          "is_input": false
+        },
+        {
+          "element_id": "14_37",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "14",
+          "bounds": "[48,2348][191,2553]",
+          "selector": "~14",
+          "is_input": false
+        },
+        {
+          "element_id": "15_38",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "15",
+          "bounds": "[218,2348][361,2553]",
+          "selector": "~15",
+          "is_input": false
+        },
+        {
+          "element_id": "16_39",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "16",
+          "bounds": "[388,2348][531,2553]",
+          "selector": "~16",
+          "is_input": false
+        },
+        {
+          "element_id": "17_40",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "17",
+          "bounds": "[558,2348][702,2553]",
+          "selector": "~17",
+          "is_input": false
+        },
+        {
+          "element_id": "18_41",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "18",
+          "bounds": "[729,2348][872,2553]",
+          "selector": "~18",
+          "is_input": false
+        },
+        {
+          "element_id": "19_42",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "19",
+          "bounds": "[899,2348][1042,2553]",
+          "selector": "~19",
+          "is_input": false
+        },
+        {
+          "element_id": "20_43",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "20",
+          "bounds": "[1069,2348][1212,2553]",
+          "selector": "~20",
+          "is_input": false
+        },
+        {
+          "element_id": "21_44",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "21",
+          "bounds": "[48,2598][191,2776]",
+          "selector": "~21",
+          "is_input": false
+        },
+        {
+          "element_id": "22_45",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "22",
+          "bounds": "[218,2598][361,2776]",
+          "selector": "~22",
+          "is_input": false
+        },
+        {
+          "element_id": "23_46",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "23",
+          "bounds": "[388,2598][531,2776]",
+          "selector": "~23",
+          "is_input": false
+        },
+        {
+          "element_id": "24_47",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "24",
+          "bounds": "[558,2598][702,2776]",
+          "selector": "~24",
+          "is_input": false
+        },
+        {
+          "element_id": "25_48",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "25",
+          "bounds": "[729,2598][872,2776]",
+          "selector": "~25",
+          "is_input": false
+        },
+        {
+          "element_id": "26_49",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "26",
+          "bounds": "[899,2598][1042,2776]",
+          "selector": "~26",
+          "is_input": false
+        },
+        {
+          "element_id": "27_50",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "27",
+          "bounds": "[1069,2598][1212,2776]",
+          "selector": "~27",
+          "is_input": false
+        }
+      ],
+      "navigation_path": [
+        {
+          "type": "click",
+          "selector": "xpath=//android.widget.Button[@bounds='[0,108][168,276]']",
+          "bounds": "[0,108][168,276]"
+        },
+        {
+          "type": "click",
+          "selector": "~Check-in History",
+          "bounds": "[0,702][912,894]"
+        }
+      ]
+    },
+    "3100a771a1c11e443de091aad25f95d7": {
+      "node_id": "screen_3100a771a1c11e443de091aad25f95d7",
+      "fingerprint": "3100a771a1c11e443de091aad25f95d7",
+      "elements": [
+        {
+          "element_id": "el_framelayout_4",
+          "class": "android.widget.FrameLayout",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[0,0][1260,2800]",
+          "selector": "xpath=//android.widget.FrameLayout[@bounds='[0,0][1260,2800]']",
+          "is_input": false
+        },
+        {
+          "element_id": "el_button_11",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[0,108][168,276]",
+          "selector": "xpath=//android.widget.Button[@bounds='[0,108][168,276]']",
+          "is_input": false
+        },
+        {
+          "element_id": "insights_12",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Insights",
+          "bounds": "[168,162][1260,222]",
+          "selector": "~Insights",
+          "is_input": false
+        },
+        {
+          "element_id": "forage_sorghum_clear_all_17",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Forage Sorghum\nClear All",
+          "bounds": "[0,951][1260,1095]",
+          "selector": "~Forage Sorghum\nClear All",
+          "is_input": false
+        },
+        {
+          "element_id": "total_fields_19",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Total Fields",
+          "bounds": "[133,372][327,423]",
+          "selector": "~Total Fields",
+          "is_input": false
+        },
+        {
+          "element_id": "crop_20",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Crop",
+          "bounds": "[590,372][670,423]",
+          "selector": "~Crop",
+          "is_input": false
+        },
+        {
+          "element_id": "regions_21",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Regions",
+          "bounds": "[962,372][1098,423]",
+          "selector": "~Regions",
+          "is_input": false
+        },
+        {
+          "element_id": "284_25",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "284",
+          "bounds": "[193,567][267,627]",
+          "selector": "~284",
+          "is_input": false
+        },
+        {
+          "element_id": "6_26",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "6",
+          "bounds": "[618,567][642,627]",
+          "selector": "~6",
+          "is_input": false
+        },
+        {
+          "element_id": "11_27",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "11",
+          "bounds": "[1005,567][1055,627]",
+          "selector": "~11",
+          "is_input": false
+        },
+        {
+          "element_id": "418_21_acre_28",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "418.21 acre",
+          "bounds": "[139,627][321,675]",
+          "selector": "~418.21 acre",
+          "is_input": false
+        },
+        {
+          "element_id": "field_count_29",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Field Count",
+          "bounds": "[72,795][630,927]",
+          "selector": "~Field Count",
+          "is_input": false
+        },
+        {
+          "element_id": "coverage__acres__30",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Coverage (acres)",
+          "bounds": "[630,795][1188,927]",
+          "selector": "~Coverage (acres)",
+          "is_input": false
+        },
+        {
+          "element_id": "crop_31",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Crop",
+          "bounds": "[96,1191][201,1260]",
+          "selector": "~Crop",
+          "is_input": false
+        },
+        {
+          "element_id": "forage_sorghum_32",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Forage Sorghum",
+          "bounds": "[96,1266][327,1308]",
+          "selector": "~Forage Sorghum",
+          "is_input": false
+        },
+        {
+          "element_id": "32_fields_33",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "32 Fields",
+          "bounds": "[114,1356][248,1395]",
+          "selector": "~32 Fields",
+          "is_input": false
+        },
+        {
+          "element_id": "field_corn_35",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Field Corn",
+          "bounds": "[775,1419][1034,1482]",
+          "selector": "~Field Corn",
+          "is_input": false
+        },
+        {
+          "element_id": "grain_sorghum_36",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Grain Sorghum",
+          "bounds": "[775,1506][1113,1569]",
+          "selector": "~Grain Sorghum",
+          "is_input": false
+        },
+        {
+          "element_id": "forage_sorghum_37",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Forage Sorghum",
+          "bounds": "[775,1593][1140,1656]",
+          "selector": "~Forage Sorghum",
+          "is_input": false
+        },
+        {
+          "element_id": "forages_38",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Forages",
+          "bounds": "[775,1680][999,1743]",
+          "selector": "~Forages",
+          "is_input": false
+        },
+        {
+          "element_id": "paddy_39",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Paddy",
+          "bounds": "[775,1767][968,1830]",
+          "selector": "~Paddy",
+          "is_input": false
+        },
+        {
+          "element_id": "brinjal_40",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Brinjal",
+          "bounds": "[775,1854][970,1917]",
+          "selector": "~Brinjal",
+          "is_input": false
+        },
+        {
+          "element_id": "prodn__code_41",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Prodn. Code",
+          "bounds": "[144,2070][978,2130]",
+          "selector": "~Prodn. Code",
+          "is_input": false
+        },
+        {
+          "element_id": "hide_42",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Hide",
+          "bounds": "[978,2034][1164,2166]",
+          "selector": "~Hide",
+          "is_input": false
+        },
+        {
+          "element_id": "32_44",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "32",
+          "bounds": "[634,2220][669,2262]",
+          "selector": "~32",
+          "is_input": false
+        },
+        {
+          "element_id": "insights_45",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Insights",
+          "bounds": "[135,2539][342,2722]",
+          "selector": "~Insights",
+          "is_input": false
+        },
+        {
+          "element_id": "my_fields_46",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "My Fields",
+          "bounds": "[516,2539][748,2722]",
+          "selector": "~My Fields",
+          "is_input": false
+        },
+        {
+          "element_id": "reports_47",
+          "class": "android.widget.ImageView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Reports",
+          "bounds": "[922,2539][1125,2722]",
+          "selector": "~Reports",
+          "is_input": false
+        }
+      ],
+      "navigation_path": [
+        {
+          "type": "click",
+          "selector": "~Field Corn",
+          "bounds": "[775,1419][1034,1482]"
+        },
+        {
+          "type": "click",
+          "selector": "~View",
+          "bounds": "[974,2034][1164,2166]"
+        }
+      ]
+    },
+    "e364f68b3c1347969aff48c2c64e2370": {
+      "node_id": "screen_e364f68b3c1347969aff48c2c64e2370",
+      "fingerprint": "e364f68b3c1347969aff48c2c64e2370",
+      "elements": [
+        {
+          "element_id": "el_framelayout_4",
+          "class": "android.widget.FrameLayout",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[0,0][1260,2800]",
+          "selector": "xpath=//android.widget.FrameLayout[@bounds='[0,0][1260,2800]']",
+          "is_input": false
+        },
+        {
+          "element_id": "el_button_9",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[12,120][156,264]",
+          "selector": "xpath=//android.widget.Button[@bounds='[12,120][156,264]']",
+          "is_input": false
+        },
+        {
+          "element_id": "pending_fields__20__10",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Pending Fields (20)",
+          "bounds": "[216,158][1212,227]",
+          "selector": "~Pending Fields (20)",
+          "is_input": false
+        },
+        {
+          "element_id": "90032077_b__agraharam___kurnool___vivek_view_request_13",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "90032077\nB. AGRAHARAM \u2022 KURNOOL \u2022 vivek\nView Request",
+          "bounds": "[0,276][1260,489]",
+          "selector": "~90032077\nB. AGRAHARAM \u2022 KURNOOL \u2022 vivek\nView Request",
+          "is_input": false
+        },
+        {
+          "element_id": "90032161_adoni___kurnool___testmn_view_request_14",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "90032161\nADONI \u2022 KURNOOL \u2022 testmn\nView Request",
+          "bounds": "[0,495][1260,708]",
+          "selector": "~90032161\nADONI \u2022 KURNOOL \u2022 testmn\nView Request",
+          "is_input": false
+        },
+        {
+          "element_id": "90032162_alwala___kurnool___hjejejs_view_request_15",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "90032162\nAlwala \u2022 KURNOOL \u2022 hjejejs\nView Request",
+          "bounds": "[0,714][1260,927]",
+          "selector": "~90032162\nAlwala \u2022 KURNOOL \u2022 hjejejs\nView Request",
+          "is_input": false
+        },
+        {
+          "element_id": "90032170_d_kottala___nandyal___trsg_view_request_16",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "90032170\nD Kottala \u2022 Nandyal \u2022 trsg\nView Request",
+          "bounds": "[0,933][1260,1146]",
+          "selector": "~90032170\nD Kottala \u2022 Nandyal \u2022 trsg\nView Request",
+          "is_input": false
+        },
+        {
+          "element_id": "90032171_testing___nandyal___uehshs_view_request_17",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "90032171\ntesting \u2022 Nandyal \u2022 uehshs\nView Request",
+          "bounds": "[0,1152][1260,1365]",
+          "selector": "~90032171\ntesting \u2022 Nandyal \u2022 uehshs\nView Request",
+          "is_input": false
+        },
+        {
+          "element_id": "90032172_allagadda___nandyal___testing_field_details__view_request_18",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "90032172\nAllagadda \u2022 Nandyal \u2022 testing field details \nView Request",
+          "bounds": "[0,1371][1260,1584]",
+          "selector": "~90032172\nAllagadda \u2022 Nandyal \u2022 testing field details \nView Request",
+          "is_input": false
+        },
+        {
+          "element_id": "90032174_allagadda___nandyal___yut_view_request_19",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "90032174\nAllagadda \u2022 Nandyal \u2022 yut\nView Request",
+          "bounds": "[0,1590][1260,1803]",
+          "selector": "~90032174\nAllagadda \u2022 Nandyal \u2022 yut\nView Request",
+          "is_input": false
+        },
+        {
+          "element_id": "90032176_kulumala___nandyal___ghyffft_view_request_20",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "90032176\nKulumala \u2022 Nandyal \u2022 ghyffft\nView Request",
+          "bounds": "[0,1809][1260,2022]",
+          "selector": "~90032176\nKulumala \u2022 Nandyal \u2022 ghyffft\nView Request",
+          "is_input": false
+        },
+        {
+          "element_id": "90032202_bailuppala___kurnool___kundan_view_request_21",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "90032202\nBAILUPPALA \u2022 KURNOOL \u2022 kundan\nView Request",
+          "bounds": "[0,2028][1260,2241]",
+          "selector": "~90032202\nBAILUPPALA \u2022 KURNOOL \u2022 kundan\nView Request",
+          "is_input": false
+        },
+        {
+          "element_id": "90032214_mudumala___nandyal___yhfg_view_request_22",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "90032214\nMudumala \u2022 Nandyal \u2022 yhfg\nView Request",
+          "bounds": "[0,2247][1260,2460]",
+          "selector": "~90032214\nMudumala \u2022 Nandyal \u2022 yhfg\nView Request",
+          "is_input": false
+        },
+        {
+          "element_id": "90032221_adoni___kurnool___test_grower_view_request_23",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "90032221\nADONI \u2022 KURNOOL \u2022 Test Grower\nView Request",
+          "bounds": "[0,2466][1260,2679]",
+          "selector": "~90032221\nADONI \u2022 KURNOOL \u2022 Test Grower\nView Request",
+          "is_input": false
+        },
+        {
+          "element_id": "90032231_kovvada___rajahmundry___tambabathula_naga_devi_view_request_24",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "90032231\nKovvada \u2022 Rajahmundry \u2022 Tambabathula Naga Devi\nView Request",
+          "bounds": "[0,2685][1260,2800]",
+          "selector": "~90032231\nKovvada \u2022 Rajahmundry \u2022 Tambabathula Naga Devi\nView Request",
+          "is_input": false
+        }
+      ],
+      "navigation_path": [
+        {
+          "type": "click",
+          "selector": "xpath=//android.widget.Button[@bounds='[0,108][168,276]']",
+          "bounds": "[0,108][168,276]"
+        },
+        {
+          "type": "click",
+          "selector": "~Pending Fields",
+          "bounds": "[0,894][912,1086]"
+        }
+      ]
+    },
+    "2ad050300b3a5b95ae4cce06633c30cc": {
+      "node_id": "screen_2ad050300b3a5b95ae4cce06633c30cc",
+      "fingerprint": "2ad050300b3a5b95ae4cce06633c30cc",
+      "elements": [
+        {
+          "element_id": "el_framelayout_4",
+          "class": "android.widget.FrameLayout",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[0,0][1260,2800]",
+          "selector": "xpath=//android.widget.FrameLayout[@bounds='[0,0][1260,2800]']",
+          "is_input": false
+        },
+        {
+          "element_id": "el_button_9",
+          "class": "android.widget.Button",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[12,120][156,264]",
+          "selector": "xpath=//android.widget.Button[@bounds='[12,120][156,264]']",
+          "is_input": false
+        },
+        {
+          "element_id": "90032172_10",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "90032172",
+          "bounds": "[216,158][489,227]",
+          "selector": "~90032172",
+          "is_input": false
+        },
+        {
+          "element_id": "field_area__0_01_acres_11",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Field Area: 0.01 acres",
+          "bounds": "[84,348][433,390]",
+          "selector": "~Field Area: 0.01 acres",
+          "is_input": false
+        },
+        {
+          "element_id": "el_view_12",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[0,276][1260,1270]",
+          "selector": "xpath=//android.view.View[@bounds='[0,276][1260,1270]']",
+          "is_input": false
+        },
+        {
+          "element_id": "el_framelayout_13",
+          "class": "android.widget.FrameLayout",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "",
+          "bounds": "[0,276][1260,1270]",
+          "selector": "xpath=//android.widget.FrameLayout[@bounds='[0,276][1260,1270]']",
+          "is_input": false
+        },
+        {
+          "element_id": "google_map_15",
+          "class": "android.view.TextureView",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Google Map",
+          "bounds": "[0,276][1260,1270]",
+          "selector": "~Google Map",
+          "is_input": false
+        },
+        {
+          "element_id": "field_details_19",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Field Details",
+          "bounds": "[48,1354][313,1411]",
+          "selector": "~Field Details",
+          "is_input": false
+        },
+        {
+          "element_id": "field_number_20",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Field Number",
+          "bounds": "[48,1474][438,1522]",
+          "selector": "~Field Number",
+          "is_input": false
+        },
+        {
+          "element_id": "90032172_21",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "90032172",
+          "bounds": "[438,1474][1212,1522]",
+          "selector": "~90032172",
+          "is_input": false
+        },
+        {
+          "element_id": "grower_name_22",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Grower Name",
+          "bounds": "[48,1570][438,1618]",
+          "selector": "~Grower Name",
+          "is_input": false
+        },
+        {
+          "element_id": "testing_field_details_23",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "testing field details",
+          "bounds": "[438,1570][1212,1618]",
+          "selector": "~testing field details",
+          "is_input": false
+        },
+        {
+          "element_id": "organizer_name_24",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Organizer Name",
+          "bounds": "[48,1666][438,1714]",
+          "selector": "~Organizer Name",
+          "is_input": false
+        },
+        {
+          "element_id": "1234567890_25",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "1234567890",
+          "bounds": "[438,1666][1212,1714]",
+          "selector": "~1234567890",
+          "is_input": false
+        },
+        {
+          "element_id": "village_26",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Village",
+          "bounds": "[48,1762][438,1810]",
+          "selector": "~Village",
+          "is_input": false
+        },
+        {
+          "element_id": "allagadda_27",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Allagadda",
+          "bounds": "[438,1762][1212,1810]",
+          "selector": "~Allagadda",
+          "is_input": false
+        },
+        {
+          "element_id": "region_28",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Region",
+          "bounds": "[48,1858][438,1906]",
+          "selector": "~Region",
+          "is_input": false
+        },
+        {
+          "element_id": "nandyal_29",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Nandyal",
+          "bounds": "[438,1858][1212,1906]",
+          "selector": "~Nandyal",
+          "is_input": false
+        },
+        {
+          "element_id": "tpm_30",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "TPM",
+          "bounds": "[48,1954][438,2002]",
+          "selector": "~TPM",
+          "is_input": false
+        },
+        {
+          "element_id": "test_tpm__internal__31",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "TEST TPM (INTERNAL)",
+          "bounds": "[438,1954][1212,2002]",
+          "selector": "~TEST TPM (INTERNAL)",
+          "is_input": false
+        },
+        {
+          "element_id": "regional_manager_32",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Regional Manager",
+          "bounds": "[48,2050][438,2098]",
+          "selector": "~Regional Manager",
+          "is_input": false
+        },
+        {
+          "element_id": "test_rm__internal__33",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "TEST RM (INTERNAL)",
+          "bounds": "[438,2050][1212,2098]",
+          "selector": "~TEST RM (INTERNAL)",
+          "is_input": false
+        },
+        {
+          "element_id": "geofence_area_34",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Geofence Area",
+          "bounds": "[48,2146][438,2194]",
+          "selector": "~Geofence Area",
+          "is_input": false
+        },
+        {
+          "element_id": "0_01_acres_35",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "0.01 acres",
+          "bounds": "[438,2146][1212,2194]",
+          "selector": "~0.01 acres",
+          "is_input": false
+        },
+        {
+          "element_id": "crop_36",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Crop",
+          "bounds": "[48,2242][438,2290]",
+          "selector": "~Crop",
+          "is_input": false
+        },
+        {
+          "element_id": "paddy_37",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Paddy",
+          "bounds": "[438,2242][1212,2290]",
+          "selector": "~Paddy",
+          "is_input": false
+        },
+        {
+          "element_id": "production_code_38",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Production Code",
+          "bounds": "[48,2338][438,2386]",
+          "selector": "~Production Code",
+          "is_input": false
+        },
+        {
+          "element_id": "5r012_39",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "5R012",
+          "bounds": "[438,2338][1212,2386]",
+          "selector": "~5R012",
+          "is_input": false
+        },
+        {
+          "element_id": "fa_name_40",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "FA Name",
+          "bounds": "[48,2434][438,2482]",
+          "selector": "~FA Name",
+          "is_input": false
+        },
+        {
+          "element_id": "test_fa_1__internal__41",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "TEST FA-1 (INTERNAL)",
+          "bounds": "[438,2434][1212,2482]",
+          "selector": "~TEST FA-1 (INTERNAL)",
+          "is_input": false
+        },
+        {
+          "element_id": "sowing_time_42",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "Sowing Time",
+          "bounds": "[48,2530][438,2578]",
+          "selector": "~Sowing Time",
+          "is_input": false
+        },
+        {
+          "element_id": "20_1_2026_43",
+          "class": "android.view.View",
+          "resource_id": "",
+          "text": "",
+          "content_desc": "20/1/2026",
+          "bounds": "[438,2530][1212,2578]",
+          "selector": "~20/1/2026",
+          "is_input": false
+        }
+      ],
+      "navigation_path": [
+        {
+          "type": "click",
+          "selector": "xpath=//android.widget.Button[@bounds='[0,108][168,276]']",
+          "bounds": "[0,108][168,276]"
+        },
+        {
+          "type": "click",
+          "selector": "~Pending Fields",
+          "bounds": "[0,894][912,1086]"
+        },
+        {
+          "type": "click",
+          "selector": "xpath=//android.widget.FrameLayout[@bounds='[0,0][1260,2800]']",
+          "bounds": "[0,0][1260,2800]"
+        }
+      ]
+    }
+  },
+  "last_action": {
+    "type": "click",
+    "selector": "~6",
+    "bounds": "[618,567][642,627]"
+  }
+}
