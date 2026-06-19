@@ -3,3 +3,7 @@ node_modules/
 __pycache__/
 *.pyc
 .env
+automation-13736-firebase-adminsdk-fbsvc-*.json
+appium_server.log
+*.log
+temp_screenshots/

@@ -42,8 +42,8 @@ class RoboCrawlRequest(BaseModel):
 
 class CrawlStepRequest(BaseModel):
     reset_state: bool = False
-    app_package: str = "com.curtain.tracking"
-    app_activity: str = "com.curtain.tracking.MainActivity"
+    app_package: Optional[str] = None
+    app_activity: Optional[str] = None
     prefill_data: Optional[dict] = None
     max_steps: int = 1
 
@@ -372,8 +372,9 @@ async def call_ollama_vision(prompt: str, image_path: Optional[str], format_json
 
 async def call_ollama_generate(prompt: str, format_json: bool = False) -> str:
     url = "http://127.0.0.1:11434/api/generate"
+    model_name = os.environ.get("OLLAMA_MODEL", "llama3.2")
     payload = {
-        "model": "qwen2.5-coder:7b",
+        "model": model_name,
         "prompt": prompt,
         "stream": False,
         "options": {
@@ -393,10 +394,19 @@ async def call_ollama_generate(prompt: str, format_json: bool = False) -> str:
 
 
 async def call_llm_generate(prompt: str, format_json: bool = False) -> str:
-    """Helper to route LLM calls. If GROQ_API_KEY is set, uses Groq Llama 3.3 70B
-    with automatic model fallback to Llama 3.1 8B on size/daily limits (TPD/TPM).
-    Falls back to Gemini, and then local Ollama if Groq fails entirely.
+    """Helper to route LLM calls. If PREFER_OLLAMA is 'true' (default), attempts local Ollama first,
+    otherwise checks for Groq and Gemini before falling back.
     """
+    prefer_ollama = os.environ.get("PREFER_OLLAMA", "true").lower() == "true"
+    model_name = os.environ.get("OLLAMA_MODEL", "llama3.2")
+    
+    if prefer_ollama:
+        try:
+            logger.info(f"Attempting generation using local Ollama ({model_name})...")
+            return await call_ollama_generate(prompt, format_json)
+        except Exception as e:
+            logger.warning(f"Local Ollama failed: {e}. Falling back to other providers...")
+            
     groq_key = os.environ.get("GROQ_API_KEY")
     gemini_key = os.environ.get("GEMINI_API_KEY")
 
@@ -414,8 +424,15 @@ async def call_llm_generate(prompt: str, format_json: bool = False) -> str:
         except Exception as e:
             logger.warning(f"Gemini API failed: {e}. Falling back to Ollama...")
 
-    logger.info("Attempting generation using local Ollama (qwen2.5-coder:7b)...")
-    return await call_ollama_generate(prompt, format_json)
+    # Final fallback if Ollama wasn't tried first
+    if not prefer_ollama:
+        try:
+            logger.info(f"Attempting generation using local Ollama ({model_name})...")
+            return await call_ollama_generate(prompt, format_json)
+        except Exception as e:
+            logger.error(f"Local Ollama fallback failed: {e}")
+        
+    raise Exception("All configured LLM providers failed.")
 
 
 @router.post("/generate")
@@ -432,21 +449,55 @@ def get_screen_fingerprint(xml_text: str) -> str:
     """Generates an MD5 fingerprint representing only the structural blueprint of the screen."""
     if not xml_text:
         return "EMPTY"
-    
-    cleaned = xml_text
-    
-    # 1. Strip all text attributes from all tags
-    cleaned = re.sub(r'\btext="[^"]*"', 'text=""', cleaned)
-    
-    # 2. Strip all accessibility content descriptions
-    cleaned = re.sub(r'\bcontent-desc="[^"]*"', 'content-desc=""', cleaned)
-    
-    # 3. Strip dynamic runtime states and bounds
-    cleaned = re.sub(r'\b(focused|selected|checked|bounds)="[^"]*"', '', cleaned)
-    
-    # 4. Hash the pure structural blueprint XML
-    import hashlib
-    return hashlib.md5(cleaned.encode("utf-8")).hexdigest()
+        
+    try:
+        import xml.etree.ElementTree as ET
+        import hashlib
+        
+        # Parse XML
+        root = ET.fromstring(xml_text.strip().encode("utf-8"))
+        
+        # Helper to recursively clean nodes
+        def clean_node(node):
+            # 1. Remove dynamic attributes that change during selection/interaction
+            attrs_to_remove = [
+                "focused", "selected", "checked", "bounds", 
+                "index", "instance", "selection-start", "selection-end",
+                "displayed", "password-visible", "showing-hint"
+            ]
+            for attr in attrs_to_remove:
+                if attr in node.attrib:
+                    del node.attrib[attr]
+            
+            # 2. Clear text and content-desc of ALL nodes to make sure
+            # typed values, greetings, clocks, and dynamic text don't change the fingerprint.
+            node.attrib["text"] = ""
+            if "content-desc" in node.attrib:
+                node.attrib["content-desc"] = ""
+                    
+            # 3. Filter out keyboard/inputmethod nodes from children
+            children_to_keep = []
+            for child in list(node):
+                pkg = child.attrib.get("package", "")
+                if "inputmethod" in pkg.lower() or "keyboard" in pkg.lower():
+                    continue
+                clean_node(child)
+                children_to_keep.append(child)
+                
+            node[:] = children_to_keep
+
+        clean_node(root)
+        
+        cleaned_xml_bytes = ET.tostring(root, encoding="utf-8")
+        return hashlib.md5(cleaned_xml_bytes).hexdigest()
+        
+    except Exception as e:
+        import hashlib
+        cleaned = xml_text
+        cleaned = re.sub(r'\btext=["\'][^"\']*["\']', 'text=""', cleaned)
+        cleaned = re.sub(r'\bcontent-desc=["\'][^"\']*["\']', 'content-desc=""', cleaned)
+        cleaned = re.sub(r'\b(focused|selected|checked|bounds|selection-start|selection-end|showing-hint)=["\'][^"\']*["\']', '', cleaned)
+        return hashlib.md5(cleaned.encode("utf-8")).hexdigest()
 
 async def classify_screen_with_ai(elements: list, default_name: str) -> tuple[str, str]:
     """Queries Ollama to get user-friendly screen_name and screen_type dynamically, falling back to heuristics."""
@@ -2484,7 +2535,7 @@ def rebuild_stack_from_path(state_manager, target_fingerprint: str):
     state_manager.state["stack"] = new_stack
 
 
-async def crawl_step_logic(reset_state: bool = False, app_package: str = "com.curtain.tracking", app_activity: str = "com.curtain.tracking.MainActivity", prefill_data: dict = None) -> dict:
+async def crawl_step_logic(reset_state: bool = False, app_package: str = None, app_activity: str = None, prefill_data: dict = None) -> dict:
     import subprocess
     import shutil
     import os
@@ -2493,6 +2544,11 @@ async def crawl_step_logic(reset_state: bool = False, app_package: str = "com.cu
     import re
     import hashlib
     
+    state_manager = AppCrawlStateManager()
+    if not reset_state and not app_package and state_manager.state.get("app_package"):
+        app_package = state_manager.state.get("app_package")
+        app_activity = state_manager.state.get("app_activity")
+        
     # 1. Resolve ADB
     adb_path = shutil.which("adb")
     if not adb_path:
@@ -2501,9 +2557,9 @@ async def crawl_step_logic(reset_state: bool = False, app_package: str = "com.cu
         if not os.path.exists(adb_path):
             raise Exception("adb binary not found in PATH or Android SDK root")
             
-    # Auto-detect package and activity if legacy default or not installed
+    # Auto-detect package and activity if default/not provided or not installed
     is_installed = False
-    if app_package and app_package != "com.kuberproject":
+    if app_package and app_package not in ("com.kuberproject", "com.curtain.tracking", "default", ""):
         try:
             check_res = subprocess.run([adb_path, "shell", "pm", "path", app_package], capture_output=True, text=True)
             if "package:" in check_res.stdout:
@@ -2512,7 +2568,7 @@ async def crawl_step_logic(reset_state: bool = False, app_package: str = "com.cu
             pass
 
     if not is_installed:
-        logger.info(f"Target app package '{app_package}' is not installed or matches legacy default. Detecting active app on emulator...")
+        logger.info(f"Target app package '{app_package}' is not specified, not installed, or matches default. Detecting active app on emulator...")
         try:
             focus_res = subprocess.run([adb_path, "shell", "dumpsys", "window", "visible-apps"], capture_output=True, text=True)
             if focus_res.returncode != 0:
@@ -2534,8 +2590,10 @@ async def crawl_step_logic(reset_state: bool = False, app_package: str = "com.cu
                     app_activity = detected_activity
         except Exception as e:
             logger.warning(f"Failed to auto-detect active app package: {e}")
+
+    if not app_package:
+        raise Exception("Target app package was not specified and no active third-party app was detected on the emulator. Please make sure the app is running in the foreground.")
         
-    state_manager = AppCrawlStateManager()
     if reset_state or not state_manager.state.get("app_package"):
         state_manager.reset(app_package, app_activity)
         
@@ -2926,6 +2984,7 @@ async def crawl_step_logic(reset_state: bool = False, app_package: str = "com.cu
             cx = (x1 + x2) // 2
             cy = (y1 + y2) // 2
             subprocess.run([adb_path, "shell", "input", "tap", str(cx), str(cy)], stdout=subprocess.DEVNULL)
+            await asyncio.sleep(2.0)
             action_desc = f"Clicked element {el_id} at ({cx}, {cy})"
         else:
             action_desc = f"Tried clicking element {el_id} but bounds parse failed"
@@ -3048,3 +3107,657 @@ async def crawl_step_endpoint(request: CrawlStepRequest):
         tb_str = traceback.format_exc()
         logger.error(f"Error during API crawl step: {e}\n{tb_str}")
         return {"status": "error", "message": str(e), "traceback": tb_str}
+
+
+class CrawlMapAiRequest(BaseModel):
+    reset_state: bool = False
+    app_package: Optional[str] = None
+    app_activity: Optional[str] = None
+    prefill_data: Optional[dict] = None
+    max_steps: int = 1
+    user_prompt: Optional[str] = None
+
+    model_config = {"extra": "allow"}
+
+
+async def crawl_step_logic_ai(
+    reset_state: bool = False,
+    app_package: str = None,
+    app_activity: str = None,
+    prefill_data: dict = None,
+    user_prompt: str = None
+) -> dict:
+    import subprocess
+    import shutil
+    import os
+    import asyncio
+    import json
+    import re
+    import hashlib
+    
+    state_manager = AppCrawlStateManager()
+    if not reset_state and not app_package and state_manager.state.get("app_package"):
+        app_package = state_manager.state.get("app_package")
+        app_activity = state_manager.state.get("app_activity")
+        
+    # 1. Resolve ADB
+    adb_path = shutil.which("adb")
+    if not adb_path:
+        sdk_root = os.environ.get("ANDROID_HOME") or os.environ.get("ANDROID_SDK_ROOT") or os.path.expanduser("~/Library/Android/sdk")
+        adb_path = os.path.join(sdk_root, "platform-tools", "adb")
+        if not os.path.exists(adb_path):
+            raise Exception("adb binary not found in PATH or Android SDK root")
+            
+    # Auto-detect package and activity if default/not provided or not installed
+    is_installed = False
+    if app_package and app_package not in ("com.kuberproject", "com.curtain.tracking", "default", ""):
+        try:
+            check_res = subprocess.run([adb_path, "shell", "pm", "path", app_package], capture_output=True, text=True)
+            if "package:" in check_res.stdout:
+                is_installed = True
+        except Exception:
+            pass
+
+    if not is_installed:
+        logger.info(f"Target app package '{app_package}' is not specified, not installed, or matches default. Detecting active app on emulator...")
+        try:
+            focus_res = subprocess.run([adb_path, "shell", "dumpsys", "window", "visible-apps"], capture_output=True, text=True)
+            if focus_res.returncode != 0:
+                focus_res = subprocess.run([adb_path, "shell", "dumpsys", "window"], capture_output=True, text=True)
+            
+            focus_out = focus_res.stdout or ""
+            match = re.search(r'mCurrentFocus=Window\{[a-fA-F0-9]+\s+\S+\s+([^/\s}]+)/([^}\s]+)\}', focus_out)
+            if not match:
+                match = re.search(r'mFocusedApp=ActivityRecord\{[a-fA-F0-9]+\s+\S+\s+([^/\s}]+)/([^}\s]+)', focus_out)
+            if not match:
+                match = re.search(r'([\w\.]+)/([\w\.]+)', focus_out)
+                
+            if match:
+                detected_package = match.group(1).strip()
+                detected_activity = match.group(2).strip()
+                if "launcher" not in detected_package.lower() and "systemui" not in detected_package.lower():
+                    logger.info(f"Auto-detected active app package: '{detected_package}', activity: '{detected_activity}'")
+                    app_package = detected_package
+                    app_activity = detected_activity
+        except Exception as e:
+            logger.warning(f"Failed to auto-detect active app package: {e}")
+
+    if not app_package:
+        raise Exception("Target app package was not specified and no active third-party app was detected on the emulator. Please make sure the app is running in the foreground.")
+        
+    if reset_state or not state_manager.state.get("app_package"):
+        state_manager.reset(app_package, app_activity)
+        
+    # Helper to restart app and replay path
+    async def restart_and_replay(target_path: list) -> str:
+        logger.info(f"Re-navigating by replaying path of length {len(target_path)}...")
+        # Kill app
+        subprocess.run([adb_path, "shell", "am", "force-stop", app_package], stdout=subprocess.DEVNULL)
+        await asyncio.sleep(1.5)
+        # Restart app
+        if app_activity:
+            subprocess.run([adb_path, "shell", "am", "start", "-n", f"{app_package}/{app_activity}"], stdout=subprocess.DEVNULL)
+        else:
+            subprocess.run([adb_path, "shell", "monkey", "-p", app_package, "-c", "android.intent.category.LAUNCHER", "1"], stdout=subprocess.DEVNULL)
+        await asyncio.sleep(4.0)
+        
+        # Replay each action in path
+        for action in target_path:
+            action_type = action.get("type")
+            selector = action.get("selector", "")
+            bounds_str = action.get("bounds", "")
+            
+            if action_type == "click":
+                # Capture current XML
+                xml_temp_path = os.path.join(os.getcwd(), "temp_replay_dump.xml")
+                subprocess.run([adb_path, "shell", "uiautomator", "dump", "/sdcard/temp_replay_dump.xml"], stdout=subprocess.DEVNULL)
+                subprocess.run([adb_path, "pull", "/sdcard/temp_replay_dump.xml", xml_temp_path], stdout=subprocess.DEVNULL)
+                subprocess.run([adb_path, "shell", "rm", "/sdcard/temp_replay_dump.xml"], stdout=subprocess.DEVNULL)
+                
+                clicked = False
+                if os.path.exists(xml_temp_path):
+                    try:
+                        with open(xml_temp_path, "r", encoding="utf-8") as f:
+                            xml_text = f.read()
+                        os.remove(xml_temp_path)
+                        
+                        elements = get_clickable_elements_for_crawl(xml_text)
+                        for el in elements:
+                            if el.get("selector") == selector or el.get("bounds") == bounds_str:
+                                coords = parse_bounds(el.get("bounds"))
+                                if coords:
+                                    x1, y1, x2, y2 = coords
+                                    cx, cy = (x1 + x2) // 2, (y1 + y2) // 2
+                                    subprocess.run([adb_path, "shell", "input", "tap", str(cx), str(cy)], stdout=subprocess.DEVNULL)
+                                    clicked = True
+                                    break
+                    except Exception:
+                        pass
+                
+                if not clicked and bounds_str:
+                    coords = parse_bounds(bounds_str)
+                    if coords:
+                        x1, y1, x2, y2 = coords
+                        cx, cy = (x1 + x2) // 2, (y1 + y2) // 2
+                        subprocess.run([adb_path, "shell", "input", "tap", str(cx), str(cy)], stdout=subprocess.DEVNULL)
+                        clicked = True
+                        
+                await asyncio.sleep(2.0)
+            elif action_type == "type":
+                value = action.get("value", "")
+                # Capture current XML
+                xml_temp_path = os.path.join(os.getcwd(), "temp_replay_dump.xml")
+                subprocess.run([adb_path, "shell", "uiautomator", "dump", "/sdcard/temp_replay_dump.xml"], stdout=subprocess.DEVNULL)
+                subprocess.run([adb_path, "pull", "/sdcard/temp_replay_dump.xml", xml_temp_path], stdout=subprocess.DEVNULL)
+                subprocess.run([adb_path, "shell", "rm", "/sdcard/temp_replay_dump.xml"], stdout=subprocess.DEVNULL)
+                
+                typed = False
+                if os.path.exists(xml_temp_path):
+                    try:
+                        with open(xml_temp_path, "r", encoding="utf-8") as f:
+                            xml_text = f.read()
+                        os.remove(xml_temp_path)
+                        
+                        elements = get_clickable_elements_for_crawl(xml_text)
+                        for el in elements:
+                            if el.get("selector") == selector or el.get("bounds") == bounds_str:
+                                coords = parse_bounds(el.get("bounds"))
+                                if coords:
+                                    x1, y1, x2, y2 = coords
+                                    cx, cy = (x1 + x2) // 2, (y1 + y2) // 2
+                                    # Tap to focus
+                                    subprocess.run([adb_path, "shell", "input", "tap", str(cx), str(cy)], stdout=subprocess.DEVNULL)
+                                    await asyncio.sleep(0.5)
+                                    # Clear field
+                                    subprocess.run([adb_path, "shell", "input", "keyevent", "123"] + ["67"] * 40, stdout=subprocess.DEVNULL)
+                                    await asyncio.sleep(0.2)
+                                    # Type value
+                                    adb_text = str(value).replace(" ", "%s").replace('"', '\\"').replace("'", "\\'")
+                                    subprocess.run([adb_path, "shell", "input", "text", adb_text], stdout=subprocess.DEVNULL)
+                                    await asyncio.sleep(0.5)
+                                    # Hide keyboard
+                                    subprocess.run([adb_path, "shell", "input", "keyevent", "111"], stdout=subprocess.DEVNULL)
+                                    typed = True
+                                    break
+                    except Exception:
+                        pass
+                
+                if not typed and bounds_str:
+                    coords = parse_bounds(bounds_str)
+                    if coords:
+                        x1, y1, x2, y2 = coords
+                        cx, cy = (x1 + x2) // 2, (y1 + y2) // 2
+                        subprocess.run([adb_path, "shell", "input", "tap", str(cx), str(cy)], stdout=subprocess.DEVNULL)
+                        await asyncio.sleep(0.5)
+                        subprocess.run([adb_path, "shell", "input", "keyevent", "123"] + ["67"] * 40, stdout=subprocess.DEVNULL)
+                        await asyncio.sleep(0.2)
+                        adb_text = str(value).replace(" ", "%s").replace('"', '\\"').replace("'", "\\'")
+                        subprocess.run([adb_path, "shell", "input", "text", adb_text], stdout=subprocess.DEVNULL)
+                        await asyncio.sleep(0.5)
+                        subprocess.run([adb_path, "shell", "input", "keyevent", "111"], stdout=subprocess.DEVNULL)
+                        typed = True
+                        
+                await asyncio.sleep(1.5)
+        return "SUCCESS"
+
+    # Step 1: Capture current screen XML
+    xml_path = os.path.join(os.getcwd(), "temp_crawl_dump.xml")
+    dump_res = subprocess.run([adb_path, "shell", "uiautomator", "dump", "/sdcard/temp_crawl_dump.xml"], capture_output=True, text=True)
+    if dump_res.returncode != 0:
+        return {"status": "error", "message": f"Failed to dump UI hierarchy: {dump_res.stderr}"}
+        
+    pull_res = subprocess.run([adb_path, "pull", "/sdcard/temp_crawl_dump.xml", xml_path], capture_output=True, text=True)
+    if pull_res.returncode != 0:
+        return {"status": "error", "message": f"Failed to pull UI hierarchy: {pull_res.stderr}"}
+        
+    with open(xml_path, "r", encoding="utf-8") as f:
+        xml_text = f.read()
+    if os.path.exists(xml_path):
+        os.remove(xml_path)
+    subprocess.run([adb_path, "shell", "rm", "/sdcard/temp_crawl_dump.xml"], stdout=subprocess.DEVNULL)
+    
+    # Step 2: Fingerprint screen and determine current node ID
+    fingerprint = get_screen_fingerprint(xml_text)
+    node_id = f"screen_{fingerprint}"
+    
+    # Auto-detect current active package/activity to detect out-of-bounds transitions
+    current_package = app_package
+    current_activity = app_activity
+    try:
+        focus_res = subprocess.run([adb_path, "shell", "dumpsys", "window", "visible-apps"], capture_output=True, text=True)
+        if focus_res.returncode != 0:
+            focus_res = subprocess.run([adb_path, "shell", "dumpsys", "window"], capture_output=True, text=True)
+        focus_out = focus_res.stdout or ""
+        match = re.search(r'mCurrentFocus=Window\{[a-fA-F0-9]+\s+\S+\s+([^/\s}]+)/([^}\s]+)\}', focus_out)
+        if not match:
+            match = re.search(r'mFocusedApp=ActivityRecord\{[a-fA-F0-9]+\s+\S+\s+([^/\s}]+)/([^}\s]+)', focus_out)
+        if not match:
+            match = re.search(r'([\w\.]+)/([\w\.]+)', focus_out)
+        if match:
+            current_package = match.group(1).strip()
+            current_activity = match.group(2).strip()
+    except Exception as e:
+        logger.warning(f"Failed to get active package: {e}")
+
+    # Out of bounds check: if we transitioned to a non-target app
+    if current_package != app_package:
+        logger.warning(f"Out of bounds! Current package is '{current_package}', target package is '{app_package}'. attempting recovery...")
+        out_of_bounds_count = state_manager.state.get("out_of_bounds_count", 0)
+        if out_of_bounds_count >= 2:
+            logger.info("Repeatedly out of bounds. Force restarting target app...")
+            subprocess.run([adb_path, "shell", "am", "force-stop", app_package], stdout=subprocess.DEVNULL)
+            await asyncio.sleep(1.5)
+            if app_activity:
+                subprocess.run([adb_path, "shell", "am", "start", "-n", f"{app_package}/{app_activity}"], stdout=subprocess.DEVNULL)
+            else:
+                subprocess.run([adb_path, "shell", "monkey", "-p", app_package, "-c", "android.intent.category.LAUNCHER", "1"], stdout=subprocess.DEVNULL)
+            await asyncio.sleep(4.0)
+            state_manager.state["out_of_bounds_count"] = 0
+            state_manager.save()
+            return {
+                "status": "recovering",
+                "message": f"Out of bounds package '{current_package}' detected repeatedly. Restarted target app.",
+                "visited_count": len(state_manager.state["visited_elements"])
+            }
+        else:
+            logger.info("Pressing device back key to recover to target app...")
+            subprocess.run([adb_path, "shell", "input", "keyevent", "4"], stdout=subprocess.DEVNULL)
+            await asyncio.sleep(1.5)
+            state_manager.state["out_of_bounds_count"] = out_of_bounds_count + 1
+            state_manager.save()
+            return {
+                "status": "recovering",
+                "message": f"Out of bounds package '{current_package}' detected. Pressed back.",
+                "visited_count": len(state_manager.state["visited_elements"])
+            }
+            
+    # Reset out of bounds count if we are in bounds
+    if state_manager.state.get("out_of_bounds_count", 0) > 0:
+        state_manager.state["out_of_bounds_count"] = 0
+        state_manager.save()
+
+    # Dynamic Stack Synchronization
+    if fingerprint in state_manager.state.get("nodes", {}):
+        rebuild_stack_from_path(state_manager, fingerprint)
+        
+    if not state_manager.state["stack"]:
+        state_manager.state["stack"].append({
+            "node_id": node_id,
+            "fingerprint": fingerprint,
+            "navigation_path": []
+        })
+        
+    current_stack_node = state_manager.state["stack"][-1]
+    
+    if current_stack_node["fingerprint"] != fingerprint:
+        existing_idx = -1
+        for i, item in enumerate(state_manager.state["stack"]):
+            if item["fingerprint"] == fingerprint:
+                existing_idx = i
+                break
+                
+        if existing_idx != -1:
+            state_manager.state["stack"] = state_manager.state["stack"][:existing_idx + 1]
+            current_stack_node = state_manager.state["stack"][-1]
+        else:
+            last_action = state_manager.state.get("last_action")
+            new_path = list(current_stack_node["navigation_path"])
+            if last_action:
+                new_path.append(last_action)
+                
+            state_manager.state["stack"].append({
+                "node_id": node_id,
+                "fingerprint": fingerprint,
+                "navigation_path": new_path
+            })
+            current_stack_node = state_manager.state["stack"][-1]
+
+    if fingerprint not in state_manager.state["nodes"]:
+        elements = get_clickable_elements_for_crawl(xml_text)
+        state_manager.state["nodes"][fingerprint] = {
+            "node_id": node_id,
+            "fingerprint": fingerprint,
+            "elements": elements,
+            "navigation_path": list(current_stack_node["navigation_path"])
+        }
+        
+    node_data = state_manager.state["nodes"][fingerprint]
+    
+    # Helper to check if a node fingerprint has unvisited elements
+    def has_unvisited_elements(mgr, fp: str) -> bool:
+        node = mgr.state.get("nodes", {}).get(fp)
+        if not node:
+            return False
+        for el in node.get("elements", []):
+            visited_key = f"{fp}_{el['element_id']}"
+            if visited_key not in mgr.state["visited_elements"]:
+                return True
+        return False
+
+    # Print beautiful active state summary to terminal console
+    print("\n" + "="*70)
+    print("                   APP CRAWLER AI ACTIVE STATE")
+    print("="*70)
+    print(f"Target Package : {state_manager.state.get('app_package')}")
+    print(f"Current Screen : {node_id} (Fingerprint: {fingerprint})")
+    print(f"Visited Set    : {len(state_manager.state['visited_elements'])} elements")
+    print("\n--- ACTIVE STACK ---")
+    for idx, entry in enumerate(state_manager.state["stack"]):
+        marker = " -> " if idx == len(state_manager.state["stack"]) - 1 else "    "
+        print(f"{marker}[{idx}] {entry['node_id']}")
+    print("="*70 + "\n")
+
+    # Ask the AI to choose the next best step to explore
+    formatted_els = []
+    for el in node_data["elements"]:
+        el_id = el["element_id"]
+        visited = f"{fingerprint}_{el_id}" in state_manager.state["visited_elements"]
+        formatted_els.append({
+            "element_id": el_id,
+            "type": "input field" if el.get("is_input") else "clickable",
+            "text": el.get("text") or "",
+            "content_description": el.get("content_desc") or "",
+            "resource_id": el.get("resource_id") or "",
+            "visited_status": "ALREADY VISITED" if visited else "UNVISITED"
+        })
+        
+    ai_prompt = (
+        "You are an AI mobile app crawling agent decision maker.\n"
+        f"We are crawling the Android application package: '{app_package}'.\n"
+        f"Current Screen Node ID: '{node_id}' (Fingerprint: {fingerprint})\n"
+    )
+    if user_prompt:
+        ai_prompt += f"User's goal/guidance: '{user_prompt}'\n"
+        
+    ai_prompt += (
+        "\nHere are the interactable elements currently visible on the screen:\n"
+        f"{json.dumps(formatted_els, indent=2)}\n\n"
+        "Please choose the next best step to explore the application.\n"
+        "Guidelines:\n"
+        "1. Prioritize UNVISITED elements to discover new screens and paths.\n"
+        "2. If you choose an input field, select action 'type' and provide a realistic value (e.g. valid phone, email, username) in 'type_value'.\n"
+        "3. Avoid clicking 'logout', 'exit', or destructive buttons unless there are no other unvisited elements.\n"
+        "4. If all elements on this screen are ALREADY VISITED, or there are no useful actions, choose action 'back' to backtrack.\n"
+        "5. If the app is stuck or in an error state, choose action 'restart' or 'back'.\n"
+        "6. If you believe all discoverable parts of the app have been fully explored, choose action 'completed'.\n"
+        "\n"
+        "Respond ONLY with a JSON object matching this schema:\n"
+        "{\n"
+        "  \"action\": \"click\" | \"type\" | \"back\" | \"restart\" | \"completed\",\n"
+        "  \"target_id\": \"element_id of the chosen target element (required for click and type)\",\n"
+        "  \"type_value\": \"text to enter (required if action is type)\",\n"
+        "  \"reason\": \"brief explanation of why this action was chosen\"\n"
+        "}\n"
+        "Do not include any extra explanation or markdown block markers. Just return the JSON object."
+    )
+
+    action = "back"
+    target_id = None
+    type_value = None
+    reason = "Fallback"
+    
+    try:
+        raw_resp = await call_llm_generate(ai_prompt, format_json=True)
+        cleaned_resp = raw_resp.strip()
+        if "```json" in cleaned_resp:
+            cleaned_resp = cleaned_resp.split("```json", 1)[1].split("```", 1)[0].strip()
+        elif "```" in cleaned_resp:
+            cleaned_resp = cleaned_resp.split("```", 1)[1].split("```", 1)[0].strip()
+            
+        res_json = json.loads(cleaned_resp)
+        action = res_json.get("action", "back").lower().strip()
+        target_id = res_json.get("target_id")
+        type_value = res_json.get("type_value")
+        reason = res_json.get("reason", "")
+        logger.info(f"AI Decision: action={action}, target_id={target_id}, reason={reason}")
+    except Exception as e:
+        logger.warning(f"Failed to parse AI decision: {e}. Falling back to heuristics.")
+        action = "heuristic_fallback"
+
+    # Action Execution Route
+    if action == "completed":
+        state_manager.state["stack"] = state_manager.state["stack"][:1]
+        state_manager.state["last_action"] = None
+        state_manager.save()
+        return {
+            "status": "completed",
+            "message": f"AI declared exploration completed. Reason: {reason}",
+            "visited_count": len(state_manager.state["visited_elements"])
+        }
+        
+    elif action == "restart":
+        subprocess.run([adb_path, "shell", "am", "force-stop", app_package], stdout=subprocess.DEVNULL)
+        await asyncio.sleep(1.5)
+        if app_activity:
+            subprocess.run([adb_path, "shell", "am", "start", "-n", f"{app_package}/{app_activity}"], stdout=subprocess.DEVNULL)
+        else:
+            subprocess.run([adb_path, "shell", "monkey", "-p", app_package, "-c", "android.intent.category.LAUNCHER", "1"], stdout=subprocess.DEVNULL)
+        await asyncio.sleep(4.0)
+        state_manager.state["last_action"] = None
+        state_manager.save()
+        return {
+            "status": "restarting",
+            "current_screen": node_id,
+            "action_taken": f"Forced restart via AI request. Reason: {reason}",
+            "stack_depth": len(state_manager.state["stack"]),
+            "visited_count": len(state_manager.state["visited_elements"])
+        }
+
+    target_element = None
+    if action in ("click", "type") and target_id:
+        for el in node_data["elements"]:
+            if el["element_id"] == target_id:
+                target_element = el
+                break
+
+    # Fallback to heuristics if AI target is invalid or missing
+    if (action in ("click", "type")) and not target_element:
+        logger.warning(f"AI target_id '{target_id}' was invalid. Falling back to heuristic selection.")
+        unvisited_inputs = [el for el in node_data["elements"] if el.get("is_input") and f"{fingerprint}_{el['element_id']}" not in state_manager.state["visited_elements"]]
+        if unvisited_inputs:
+            target_element = unvisited_inputs[0]
+            action = "type"
+            type_value = "920"
+        else:
+            for el in node_data["elements"]:
+                if el.get("is_input"):
+                    continue
+                visited_key = f"{fingerprint}_{el['element_id']}"
+                if visited_key not in state_manager.state["visited_elements"]:
+                    target_element = el
+                    action = "click"
+                    break
+
+    if not target_element and action in ("click", "type"):
+        action = "back"
+
+    if action == "click" and target_element:
+        el_id = target_element["element_id"]
+        selector = target_element["selector"]
+        bounds_str = target_element["bounds"]
+        coords = parse_bounds(bounds_str)
+        
+        visited_key = f"{fingerprint}_{el_id}"
+        state_manager.state["visited_elements"].append(visited_key)
+        
+        state_action = {
+            "type": "click",
+            "selector": selector,
+            "bounds": bounds_str
+        }
+        state_manager.state["last_action"] = state_action
+        
+        if coords:
+            x1, y1, x2, y2 = coords
+            cx = (x1 + x2) // 2
+            cy = (y1 + y2) // 2
+            subprocess.run([adb_path, "shell", "input", "tap", str(cx), str(cy)], stdout=subprocess.DEVNULL)
+            await asyncio.sleep(2.0)
+            action_desc = f"Clicked element {el_id} at ({cx}, {cy}). Reason: {reason}"
+        else:
+            action_desc = f"Tried clicking element {el_id} but bounds parse failed"
+            
+        state_manager.save()
+        sync_to_app_map(state_manager)
+        
+        return {
+            "status": "exploring",
+            "current_screen": node_id,
+            "action_taken": action_desc,
+            "stack_depth": len(state_manager.state["stack"]),
+            "visited_count": len(state_manager.state["visited_elements"])
+        }
+
+    elif action == "type" and target_element:
+        el_id = target_element["element_id"]
+        selector = target_element["selector"]
+        bounds_str = target_element["bounds"]
+        coords = parse_bounds(bounds_str)
+        
+        val_to_type = type_value or "920"
+        
+        visited_key = f"{fingerprint}_{el_id}"
+        state_manager.state["visited_elements"].append(visited_key)
+        
+        state_action = {
+            "type": "type",
+            "selector": selector,
+            "bounds": bounds_str,
+            "value": val_to_type
+        }
+        state_manager.state["last_action"] = state_action
+        
+        if coords:
+            x1, y1, x2, y2 = coords
+            cx = (x1 + x2) // 2
+            cy = (y1 + y2) // 2
+            subprocess.run([adb_path, "shell", "input", "tap", str(cx), str(cy)], stdout=subprocess.DEVNULL)
+            await asyncio.sleep(0.5)
+            clear_cmd = [adb_path, "shell", "input", "keyevent", "123"] + ["67"] * 40
+            subprocess.run(clear_cmd, stdout=subprocess.DEVNULL)
+            await asyncio.sleep(0.2)
+            adb_text = str(val_to_type).replace(" ", "%s").replace('"', '\\"').replace("'", "\\'")
+            subprocess.run([adb_path, "shell", "input", "text", adb_text], stdout=subprocess.DEVNULL)
+            await asyncio.sleep(0.5)
+            subprocess.run([adb_path, "shell", "input", "keyevent", "111"], stdout=subprocess.DEVNULL)
+            await asyncio.sleep(0.5)
+            action_desc = f"Typed '{val_to_type}' into field {el_id} at ({cx}, {cy}). Reason: {reason}"
+        else:
+            action_desc = f"Tried typing into {el_id} but bounds parse failed"
+            
+        state_manager.save()
+        sync_to_app_map(state_manager)
+        
+        return {
+            "status": "prefilling",
+            "current_screen": node_id,
+            "action_taken": action_desc,
+            "stack_depth": len(state_manager.state["stack"]),
+            "visited_count": len(state_manager.state["visited_elements"])
+        }
+
+    else:
+        # Action is 'back' or fallback 'back'
+        target_ancestor_idx = -1
+        for i in range(len(state_manager.state["stack"]) - 2, -1, -1):
+            ancestor = state_manager.state["stack"][i]
+            ancestor_fp = ancestor["fingerprint"]
+            if has_unvisited_elements(state_manager, ancestor_fp):
+                target_ancestor_idx = i
+                break
+                
+        if target_ancestor_idx == -1:
+            state_manager.state["stack"] = state_manager.state["stack"][:1]
+            state_manager.state["last_action"] = None
+            state_manager.save()
+            return {
+                "status": "completed",
+                "message": f"All discoverable paths from home screen have been fully crawled. Reason: {reason}",
+                "visited_count": len(state_manager.state["visited_elements"])
+            }
+            
+        popped_nodes = state_manager.state["stack"][target_ancestor_idx + 1:]
+        state_manager.state["stack"] = state_manager.state["stack"][:target_ancestor_idx + 1]
+        parent_node = state_manager.state["stack"][-1]
+        parent_fingerprint = parent_node["fingerprint"]
+        
+        use_back = (len(popped_nodes) == 1)
+        backtrack_success = False
+        
+        if use_back:
+            subprocess.run([adb_path, "shell", "input", "keyevent", "4"], stdout=subprocess.DEVNULL)
+            await asyncio.sleep(1.5)
+            
+            xml_back_path = os.path.join(os.getcwd(), "temp_back_dump.xml")
+            subprocess.run([adb_path, "shell", "uiautomator", "dump", "/sdcard/temp_back_dump.xml"], stdout=subprocess.DEVNULL)
+            subprocess.run([adb_path, "pull", "/sdcard/temp_back_dump.xml", xml_back_path], stdout=subprocess.DEVNULL)
+            subprocess.run([adb_path, "shell", "rm", "/sdcard/temp_back_dump.xml"], stdout=subprocess.DEVNULL)
+            
+            if os.path.exists(xml_back_path):
+                try:
+                    with open(xml_back_path, "r", encoding="utf-8") as f:
+                        back_xml_text = f.read()
+                    os.remove(xml_back_path)
+                    
+                    new_fingerprint = get_screen_fingerprint(back_xml_text)
+                    if new_fingerprint == parent_fingerprint:
+                        backtrack_success = True
+                except Exception:
+                    pass
+                    
+        if backtrack_success:
+            state_manager.state["last_action"] = None
+            state_manager.save()
+            return {
+                "status": "backtracking",
+                "current_screen": parent_node["node_id"],
+                "action_taken": f"AI backtrack: Pressed device back button (Backtrack Success to {parent_node['node_id']}). Reason: {reason}",
+                "stack_depth": len(state_manager.state["stack"]),
+                "visited_count": len(state_manager.state["visited_elements"])
+            }
+        else:
+            await restart_and_replay(parent_node["navigation_path"])
+            state_manager.state["last_action"] = None
+            state_manager.save()
+            return {
+                "status": "backtracking",
+                "current_screen": parent_node["node_id"],
+                "action_taken": f"AI backtrack: App restarted and stack path replayed (Backtrack Self-Healed to {parent_node['node_id']}). Reason: {reason}",
+                "stack_depth": len(state_manager.state["stack"]),
+                "visited_count": len(state_manager.state["visited_elements"])
+            }
+
+
+@router.post("/crawl_map_ai")
+async def crawl_map_ai_endpoint(request: CrawlMapAiRequest):
+    """Exposes the AI-decision driven mobile app crawler over a FastAPI HTTP POST endpoint."""
+    try:
+        results = []
+        current_reset = request.reset_state
+        for step in range(request.max_steps):
+            res = await crawl_step_logic_ai(
+                reset_state=current_reset,
+                app_package=request.app_package,
+                app_activity=request.app_activity,
+                prefill_data=request.prefill_data,
+                user_prompt=request.user_prompt
+            )
+            results.append(res)
+            
+            if res.get("status") == "completed":
+                break
+                
+            current_reset = False
+            if step < request.max_steps - 1:
+                await asyncio.sleep(1.2)
+                
+        return {
+            "status": "success",
+            "results": results if len(results) > 1 else results[0]
+        }
+    except Exception as e:
+        import traceback
+        tb_str = traceback.format_exc()
+        logger.error(f"Error during API AI crawl map step: {e}\n{tb_str}")
+        return {"status": "error", "message": str(e), "traceback": tb_str}
+

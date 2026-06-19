@@ -133,8 +133,8 @@ def ensure_appium_server(device_type: str, port: int = 4723):
         logger.error(f"Failed to auto-spawn Appium server: {e}", exc_info=True)
         raise RuntimeError(f"Could not automatically start Appium server: {e}")
 
-def extract_package_activity(apk_path: str):
-    """Extract package and launchable activity from an APK using aapt."""
+def extract_apk_metadata(apk_path: str):
+    """Extract package, launchable activity, and application label from an APK using aapt."""
     aapt_path = "aapt"
     if shutil.which("aapt") is None:
         sdk_root = os.environ.get("ANDROID_HOME") or os.environ.get("ANDROID_SDK_ROOT") or os.path.expanduser("~/Library/Android/sdk")
@@ -151,22 +151,36 @@ def extract_package_activity(apk_path: str):
 
     try:
         output = subprocess.check_output([aapt_path, "dump", "badging", apk_path]).decode()
-        package, activity = None, None
+        package, activity, app_label = None, None, None
         for line in output.splitlines():
             if line.startswith("package:"):
                 package = line.split("name='")[1].split("'")[0]
-            if line.startswith("launchable-activity:"):
+            elif line.startswith("launchable-activity:"):
                 activity = line.split("name='")[1].split("'")[0]
-        return package, activity
+            elif line.startswith("application-label:"):
+                app_label = line.split(":'")[1].split("'")[0]
+            elif line.startswith("application:") and not app_label:
+                if "label='" in line:
+                    app_label = line.split("label='")[1].split("'")[0]
+        return package, activity, app_label
     except Exception as e:
-        logger.warning(f"Failed to extract package/activity: {e}")
-        return None, None
+        logger.warning(f"Failed to extract APK metadata: {e}")
+        return None, None, None
+
+
+def extract_package_activity(apk_path: str):
+    """Extract package and launchable activity from an APK using aapt."""
+    package, activity, _ = extract_apk_metadata(apk_path)
+    return package, activity
+
 
 
 class AppiumMcpClient:
-    def __init__(self, server_dir: str, env: Optional[Dict[str, str]] = None):
+    def __init__(self, server_dir: str = "appium-android", env: Optional[Dict[str, str]] = None):
         if server_dir == "appium-android":
             server_dir = "/Users/preethichitte/Documents/mcp_appium_server"
+        elif server_dir == "testily-appium-mcp":
+            server_dir = "/Users/preethichitte/Documents/testily-appium-mcp-server"
         self.server_dir = server_dir
         self.env = env or {}
         self.process: Optional[asyncio.subprocess.Process] = None
@@ -358,6 +372,12 @@ class AppiumMcpClient:
     async def stop(self):
         """Gracefully terminates the Appium MCP subprocess."""
         logger.info("Stopping Appium MCP Subprocess...")
+        try:
+            # Cleanly stop the Appium session first
+            await self.call_tool("stop_session", {}, timeout_seconds=5.0)
+        except Exception as e:
+            logger.warning(f"Failed to cleanly stop Appium session via stop_session: {e}")
+            
         if self._read_task:
             self._read_task.cancel()
         if self._err_task:

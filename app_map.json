@@ -1,33 +1,18 @@
 {
   "app_name": "Android Emulator",
-  "package": "com.advanta.croppulse.stage",
-  "crawl_date": "2026-06-15",
-  "total_screens_discovered": 12,
-  "steps_taken": 100,
+  "package": "com.zeptoconsumerapp",
+  "crawl_date": "2026-06-20",
+  "total_screens_discovered": 4,
+  "steps_taken": 4,
   "nodes": [
     {
-      "node_id": "screen_8ad5e14a737c2ab87557db3561875158",
-      "screen_name": "screen_8ad5e14a737c2ab87557db3561875158",
+      "node_id": "screen_73f1c15293beac92a1a0a547dd6c2f76",
+      "screen_name": "screen_73f1c15293beac92a1a0a547dd6c2f76",
       "screen_type": "General",
       "elements": [
         {
-          "element_id": "el_framelayout_4",
-          "bounds": "[0,0][1260,2800]",
-          "clickable": true,
-          "element_type": "FrameLayout",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.FrameLayout\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.7292
-            }
-          }
-        },
-        {
-          "element_id": "el_button_11",
-          "bounds": "[0,108][168,276]",
+          "element_id": "this_is_a_banner_40",
+          "bounds": "[0,815][1080,1115]",
           "clickable": true,
           "element_type": "Button",
           "selectors": {
@@ -35,14 +20,134 @@
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.0778,
-              "y_ratio": 0.1
+              "x_ratio": 0.5,
+              "y_ratio": 0.5026
             }
           }
         },
         {
-          "element_id": "insights_12",
-          "bounds": "[168,162][1260,222]",
+          "element_id": "this_is_a_banner_46",
+          "bounds": "[24,1115][352,1734]",
+          "clickable": true,
+          "element_type": "Button",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.1741,
+              "y_ratio": 0.7417
+            }
+          }
+        },
+        {
+          "element_id": "this_is_a_banner_48",
+          "bounds": "[376,1115][704,1412]",
+          "clickable": true,
+          "element_type": "Button",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.5,
+              "y_ratio": 0.6578
+            }
+          }
+        },
+        {
+          "element_id": "this_is_a_banner_51",
+          "bounds": "[728,1115][1056,1412]",
+          "clickable": true,
+          "element_type": "Button",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.8259,
+              "y_ratio": 0.6578
+            }
+          }
+        },
+        {
+          "element_id": "this_is_a_banner_54",
+          "bounds": "[376,1433][704,1730]",
+          "clickable": true,
+          "element_type": "Button",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.5,
+              "y_ratio": 0.8234
+            }
+          }
+        },
+        {
+          "element_id": "this_is_a_banner_57",
+          "bounds": "[728,1433][1056,1730]",
+          "clickable": true,
+          "element_type": "Button",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.8259,
+              "y_ratio": 0.8234
+            }
+          }
+        },
+        {
+          "element_id": "buy_2__get_10__off_65",
+          "bounds": "[0,1773][45,1880]",
+          "clickable": true,
+          "element_type": "Button",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.0204,
+              "y_ratio": 0.951
+            }
+          }
+        },
+        {
+          "element_id": "ordinary_68",
+          "bounds": "[90,1773][987,1880]",
+          "clickable": true,
+          "element_type": "Button",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.4981,
+              "y_ratio": 0.951
+            }
+          }
+        },
+        {
+          "element_id": "buy_2__get_10__off_71",
+          "bounds": "[1032,1773][1080,1880]",
+          "clickable": true,
+          "element_type": "Button",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.9778,
+              "y_ratio": 0.951
+            }
+          }
+        },
+        {
+          "element_id": "coupons___offers_77",
+          "bounds": "[45,1976][1035,2033]",
           "clickable": true,
           "element_type": "View",
           "selectors": {
@@ -50,413 +155,458 @@
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.6611,
-              "y_ratio": 0.1
+              "x_ratio": 0.5,
+              "y_ratio": 1.0437
             }
           }
         },
         {
-          "element_id": "view_by____field_count_clear_all_17",
-          "bounds": "[0,951][1260,1095]",
+          "element_id": "above__599__flat___50_off_80",
+          "bounds": "[36,2105][348,2297]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "ViewGroup",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.5328
+              "x_ratio": 0.1778,
+              "y_ratio": 1.1464
             }
           }
         },
         {
-          "element_id": "total_fields_19",
-          "bounds": "[133,372][327,423]",
+          "element_id": "above__1199__flat___100_off_92",
+          "bounds": "[372,2105][684,2297]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "ViewGroup",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.213,
-              "y_ratio": 0.2068
+              "x_ratio": 0.4889,
+              "y_ratio": 1.1464
             }
           }
         },
         {
-          "element_id": "crop_20",
-          "bounds": "[590,372][670,423]",
+          "element_id": "above__1799__flat___150_off_104",
+          "bounds": "[708,2105][1020,2297]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "ViewGroup",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.2068
+              "x_ratio": 0.8,
+              "y_ratio": 1.1464
             }
           }
         },
         {
-          "element_id": "regions_21",
-          "bounds": "[962,372][1098,423]",
+          "element_id": "el_viewgroup_116",
+          "bounds": "[1044,2105][1080,2297]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "ViewGroup",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.9537,
-              "y_ratio": 0.2068
+              "x_ratio": 0.9833,
+              "y_ratio": 1.1464
             }
           }
         },
         {
-          "element_id": "284_25",
-          "bounds": "[193,567][267,627]",
+          "element_id": "get__25_off_with_mobikwik_upi__valid_on_orders_above__99_126",
+          "bounds": "[0,0][0,0]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "ViewGroup",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.213,
-              "y_ratio": 0.3109
+              "x_ratio": 0.0,
+              "y_ratio": 0.0
             }
           }
         },
         {
-          "element_id": "6_26",
-          "bounds": "[618,567][642,627]",
+          "element_id": "flat__100_discount_with_hsbc_bank_credit_cards__valid_on_transactions_above__999_134",
+          "bounds": "[0,0][0,0]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "ViewGroup",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.3109
+              "x_ratio": 0.0,
+              "y_ratio": 0.0
             }
           }
         },
         {
-          "element_id": "11_27",
-          "bounds": "[1005,567][1055,627]",
+          "element_id": "high_demand__schedule_order_148",
+          "bounds": "[45,143][617,212]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "TextView",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.widget.TextView\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.9537,
-              "y_ratio": 0.3109
+              "x_ratio": 0.3065,
+              "y_ratio": 0.0922
             }
           }
         },
         {
-          "element_id": "418_21_acre_28",
-          "bounds": "[139,627][321,675]",
+          "element_id": "current_address_name_is__other___address_description_is___101_st_floor__hmpj_g73__bhoirwadi_rd__phase_3__hinjawadi_rajiv_gandhi_infotech_park__hinjawadi__pimpri_chinchwad__maharashtra_411057__india_149",
+          "bounds": "[45,218][678,263]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "Button",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.213,
-              "y_ratio": 0.3391
+              "x_ratio": 0.3343,
+              "y_ratio": 0.125
             }
           }
         },
         {
-          "element_id": "field_count_29",
-          "bounds": "[72,795][630,927]",
+          "element_id": "_0_156",
+          "bounds": "[754,159][930,246]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "ViewGroup",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.325,
-              "y_ratio": 0.4484
+              "x_ratio": 0.7796,
+              "y_ratio": 0.1052
             }
           }
         },
         {
-          "element_id": "coverage__acres__30",
-          "bounds": "[630,795][1188,927]",
+          "element_id": "account_settings_160",
+          "bounds": "[954,164][1035,242]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "Button",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.8417,
-              "y_ratio": 0.4484
+              "x_ratio": 0.9204,
+              "y_ratio": 0.1057
             }
           }
         },
         {
-          "element_id": "crop_31",
-          "bounds": "[96,1191][201,1260]",
+          "element_id": "el_viewgroup_166",
+          "bounds": "[42,294][264,465]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "ViewGroup",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.137,
-              "y_ratio": 0.638
+              "x_ratio": 0.1417,
+              "y_ratio": 0.1974
             }
           }
         },
         {
-          "element_id": "all_crops_32",
-          "bounds": "[96,1266][223,1308]",
+          "element_id": "el_viewgroup_175",
+          "bounds": "[300,294][522,432]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "ViewGroup",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.1472,
-              "y_ratio": 0.6703
+              "x_ratio": 0.3806,
+              "y_ratio": 0.1891
             }
           }
         },
         {
-          "element_id": "field_corn_34",
-          "bounds": "[775,1419][1034,1482]",
+          "element_id": "el_viewgroup_179",
+          "bounds": "[558,294][780,432]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "ViewGroup",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.837,
-              "y_ratio": 0.7552
+              "x_ratio": 0.6194,
+              "y_ratio": 0.1891
             }
           }
         },
         {
-          "element_id": "grain_sorghum_35",
-          "bounds": "[775,1506][1113,1569]",
+          "element_id": "el_viewgroup_183",
+          "bounds": "[816,294][1038,432]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "ViewGroup",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.8741,
-              "y_ratio": 0.8005
+              "x_ratio": 0.8583,
+              "y_ratio": 0.1891
             }
           }
         },
         {
-          "element_id": "forage_sorghum_36",
-          "bounds": "[775,1593][1140,1656]",
+          "element_id": "atta___more_194",
+          "bounds": "[45,491][1035,617]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "Button",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.8861,
-              "y_ratio": 0.8458
+              "x_ratio": 0.5,
+              "y_ratio": 0.2885
             }
           }
         },
         {
-          "element_id": "forages_37",
-          "bounds": "[775,1680][999,1743]",
+          "element_id": "all_tab_207",
+          "bounds": "[0,642][207,813]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "Button",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.8213,
-              "y_ratio": 0.8911
+              "x_ratio": 0.0954,
+              "y_ratio": 0.3786
             }
           }
         },
         {
-          "element_id": "paddy_38",
-          "bounds": "[775,1767][968,1830]",
+          "element_id": "match_day_tab_214",
+          "bounds": "[207,642][422,813]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "Button",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.8065,
-              "y_ratio": 0.9365
+              "x_ratio": 0.2907,
+              "y_ratio": 0.3786
             }
           }
         },
         {
-          "element_id": "brinjal_39",
-          "bounds": "[775,1854][970,1917]",
+          "element_id": "fresh_tab_220",
+          "bounds": "[422,642][629,813]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "Button",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.8074,
-              "y_ratio": 0.9818
+              "x_ratio": 0.4861,
+              "y_ratio": 0.3786
             }
           }
         },
         {
-          "element_id": "regions_40",
-          "bounds": "[96,2142][277,2211]",
+          "element_id": "electronics_tab_226",
+          "bounds": "[629,642][850,813]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "Button",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.1722,
-              "y_ratio": 1.1333
+              "x_ratio": 0.6843,
+              "y_ratio": 0.3786
             }
           }
         },
         {
-          "element_id": "all_regions_41",
-          "bounds": "[96,2217][254,2259]",
+          "element_id": "fashion_tab_232",
+          "bounds": "[850,642][1057,813]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "Button",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.162,
-              "y_ratio": 1.1656
+              "x_ratio": 0.8824,
+              "y_ratio": 0.3786
             }
           }
         },
         {
-          "element_id": "nandyal_43",
-          "bounds": "[732,2289][958,2352]",
+          "element_id": "mobiles_tab_238",
+          "bounds": "[1057,642][1080,813]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "Button",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.7824,
-              "y_ratio": 1.2083
+              "x_ratio": 0.9889,
+              "y_ratio": 0.3786
             }
           }
         },
         {
-          "element_id": "rajahmundry_44",
-          "bounds": "[732,2352][1041,2415]",
+          "element_id": "el_viewgroup_243",
+          "bounds": "[900,2067][1080,2040]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "ViewGroup",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.8204,
-              "y_ratio": 1.2411
+              "x_ratio": 0.9167,
+              "y_ratio": 1.0693
             }
           }
         },
         {
-          "element_id": "kurnool_45",
-          "bounds": "[732,2415][951,2478]",
+          "element_id": "unlock_extra__50_off_248",
+          "bounds": "[18,2067][768,2217]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "ViewGroup",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.7787,
-              "y_ratio": 1.274
+              "x_ratio": 0.3639,
+              "y_ratio": 1.1156
             }
           }
         },
         {
-          "element_id": "bagalakot_46",
-          "bounds": "[732,2478][989,2515]",
+          "element_id": "offers_251",
+          "bounds": "[306,2067][480,2085]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "ViewGroup",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.7963,
-              "y_ratio": 1.3
+              "x_ratio": 0.3639,
+              "y_ratio": 1.0813
             }
           }
         },
         {
-          "element_id": "insights_48",
-          "bounds": "[135,2539][342,2722]",
+          "element_id": "cart__5_items_272",
+          "bounds": "[786,2067][1062,2217]",
           "clickable": true,
-          "element_type": "ImageView",
+          "element_type": "ViewGroup",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.2204,
-              "y_ratio": 1.3698
+              "x_ratio": 0.8556,
+              "y_ratio": 1.1156
             }
           }
         },
         {
-          "element_id": "my_fields_49",
-          "bounds": "[516,2539][748,2722]",
+          "element_id": "home_tab_283",
+          "bounds": "[6,2235][220,2304]",
           "clickable": true,
-          "element_type": "ImageView",
+          "element_type": "Button",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.5852,
-              "y_ratio": 1.3698
+              "x_ratio": 0.1046,
+              "y_ratio": 1.1818
             }
           }
         },
         {
-          "element_id": "reports_50",
-          "bounds": "[922,2539][1125,2722]",
+          "element_id": "categories_tab_287",
+          "bounds": "[220,2235][433,2304]",
           "clickable": true,
-          "element_type": "ImageView",
+          "element_type": "Button",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.9472,
-              "y_ratio": 1.3698
+              "x_ratio": 0.3019,
+              "y_ratio": 1.1818
+            }
+          }
+        },
+        {
+          "element_id": "buy_again_tab_291",
+          "bounds": "[433,2235][647,2304]",
+          "clickable": true,
+          "element_type": "Button",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.5,
+              "y_ratio": 1.1818
+            }
+          }
+        },
+        {
+          "element_id": "cafe_tab_295",
+          "bounds": "[647,2235][860,2304]",
+          "clickable": true,
+          "element_type": "Button",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.6972,
+              "y_ratio": 1.1818
+            }
+          }
+        },
+        {
+          "element_id": "zepto_tab_299",
+          "bounds": "[860,2235][1074,2304]",
+          "clickable": true,
+          "element_type": "Button",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.8954,
+              "y_ratio": 1.1818
             }
           }
         }
@@ -464,13 +614,13 @@
       "navigation_path": []
     },
     {
-      "node_id": "screen_8b585b134687a240ba38a5202f6930ec",
-      "screen_name": "screen_8b585b134687a240ba38a5202f6930ec",
+      "node_id": "screen_965be748cad3c7df45bdd5e31f4da629",
+      "screen_name": "screen_965be748cad3c7df45bdd5e31f4da629",
       "screen_type": "General",
       "elements": [
         {
           "element_id": "el_framelayout_4",
-          "bounds": "[0,0][1260,2800]",
+          "bounds": "[0,0][1344,2992]",
           "clickable": true,
           "element_type": "FrameLayout",
           "selectors": {
@@ -478,238 +628,14 @@
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.7292
+              "x_ratio": 0.6222,
+              "y_ratio": 0.7792
             }
           }
         },
         {
-          "element_id": "el_view_11",
-          "bounds": "[48,147][120,219]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.0778,
-              "y_ratio": 0.0953
-            }
-          }
-        },
-        {
-          "element_id": "advanta_farm_13",
-          "bounds": "[241,144][587,222]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.3833,
-              "y_ratio": 0.0953
-            }
-          }
-        },
-        {
-          "element_id": "analytics_14",
-          "bounds": "[587,144][817,222]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.65,
-              "y_ratio": 0.0953
-            }
-          }
-        },
-        {
-          "element_id": "my_account_16",
-          "bounds": "[0,318][912,510]",
-          "clickable": true,
-          "element_type": "Button",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.4222,
-              "y_ratio": 0.2156
-            }
-          }
-        },
-        {
-          "element_id": "dispatch_history__6__17",
-          "bounds": "[0,510][912,702]",
-          "clickable": true,
-          "element_type": "Button",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.4222,
-              "y_ratio": 0.3156
-            }
-          }
-        },
-        {
-          "element_id": "check_in_history_18",
-          "bounds": "[0,702][912,894]",
-          "clickable": true,
-          "element_type": "Button",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.4222,
-              "y_ratio": 0.4156
-            }
-          }
-        },
-        {
-          "element_id": "pending_fields_19",
-          "bounds": "[0,894][912,1086]",
-          "clickable": true,
-          "element_type": "Button",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.4222,
-              "y_ratio": 0.5156
-            }
-          }
-        },
-        {
-          "element_id": "pld_requests_20",
-          "bounds": "[0,1086][912,1278]",
-          "clickable": true,
-          "element_type": "Button",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.4222,
-              "y_ratio": 0.6156
-            }
-          }
-        },
-        {
-          "element_id": "log_out_21",
-          "bounds": "[48,2215][864,2359]",
-          "clickable": true,
-          "element_type": "Button",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.4222,
-              "y_ratio": 1.1911
-            }
-          }
-        },
-        {
-          "element_id": "app_version_1_0_14_stage_22",
-          "bounds": "[212,2407][700,2467]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.4222,
-              "y_ratio": 1.2693
-            }
-          }
-        },
-        {
-          "element_id": "insights_23",
-          "bounds": "[135,2539][342,2722]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2204,
-              "y_ratio": 1.3698
-            }
-          }
-        },
-        {
-          "element_id": "my_fields_24",
-          "bounds": "[516,2539][748,2722]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5852,
-              "y_ratio": 1.3698
-            }
-          }
-        },
-        {
-          "element_id": "reports_25",
-          "bounds": "[922,2539][1125,2722]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.9472,
-              "y_ratio": 1.3698
-            }
-          }
-        }
-      ],
-      "navigation_path": [
-        {
-          "type": "click",
-          "selector": "xpath=//android.widget.Button[@bounds='[0,108][168,276]']",
-          "bounds": "[0,108][168,276]"
-        }
-      ]
-    },
-    {
-      "node_id": "screen_d906ac3754d8283bc922ff0ff6ce4026",
-      "screen_name": "screen_d906ac3754d8283bc922ff0ff6ce4026",
-      "screen_type": "General",
-      "elements": [
-        {
-          "element_id": "el_framelayout_4",
-          "bounds": "[0,0][1260,2800]",
-          "clickable": true,
-          "element_type": "FrameLayout",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.FrameLayout\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.7292
-            }
-          }
-        },
-        {
-          "element_id": "el_button_11",
-          "bounds": "[0,108][168,276]",
+          "element_id": "open_navigation_menu_10",
+          "bounds": "[12,171][156,315]",
           "clickable": true,
           "element_type": "Button",
           "selectors": {
@@ -718,13 +644,13 @@
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
               "x_ratio": 0.0778,
-              "y_ratio": 0.1
+              "y_ratio": 0.1266
             }
           }
         },
         {
-          "element_id": "insights_12",
-          "bounds": "[168,162][1260,222]",
+          "element_id": "dashboard_11",
+          "bounds": "[216,204][502,282]",
           "clickable": true,
           "element_type": "View",
           "selectors": {
@@ -732,3680 +658,14 @@
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.6611,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "field_corn_clear_all_17",
-          "bounds": "[0,951][1260,1095]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.5328
-            }
-          }
-        },
-        {
-          "element_id": "total_fields_19",
-          "bounds": "[133,372][327,423]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.213,
-              "y_ratio": 0.2068
-            }
-          }
-        },
-        {
-          "element_id": "crop_20",
-          "bounds": "[590,372][670,423]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.2068
-            }
-          }
-        },
-        {
-          "element_id": "regions_21",
-          "bounds": "[962,372][1098,423]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.9537,
-              "y_ratio": 0.2068
-            }
-          }
-        },
-        {
-          "element_id": "284_25",
-          "bounds": "[193,567][267,627]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.213,
-              "y_ratio": 0.3109
-            }
-          }
-        },
-        {
-          "element_id": "6_26",
-          "bounds": "[618,567][642,627]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.3109
-            }
-          }
-        },
-        {
-          "element_id": "11_27",
-          "bounds": "[1005,567][1055,627]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.9537,
-              "y_ratio": 0.3109
-            }
-          }
-        },
-        {
-          "element_id": "418_21_acre_28",
-          "bounds": "[139,627][321,675]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.213,
-              "y_ratio": 0.3391
-            }
-          }
-        },
-        {
-          "element_id": "field_count_29",
-          "bounds": "[72,795][630,927]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.325,
-              "y_ratio": 0.4484
-            }
-          }
-        },
-        {
-          "element_id": "coverage__acres__30",
-          "bounds": "[630,795][1188,927]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8417,
-              "y_ratio": 0.4484
-            }
-          }
-        },
-        {
-          "element_id": "crop_31",
-          "bounds": "[96,1191][201,1260]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.137,
-              "y_ratio": 0.638
-            }
-          }
-        },
-        {
-          "element_id": "field_corn_32",
-          "bounds": "[96,1266][238,1308]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.1546,
-              "y_ratio": 0.6703
-            }
-          }
-        },
-        {
-          "element_id": "305_46_acres_33",
-          "bounds": "[114,1356][305,1395]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.1935,
-              "y_ratio": 0.7161
-            }
-          }
-        },
-        {
-          "element_id": "field_corn_35",
-          "bounds": "[775,1419][1034,1482]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.837,
-              "y_ratio": 0.7552
-            }
-          }
-        },
-        {
-          "element_id": "forage_sorghum_36",
-          "bounds": "[775,1506][1140,1569]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8861,
-              "y_ratio": 0.8005
-            }
-          }
-        },
-        {
-          "element_id": "grain_sorghum_37",
-          "bounds": "[775,1593][1113,1656]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8741,
-              "y_ratio": 0.8458
-            }
-          }
-        },
-        {
-          "element_id": "paddy_38",
-          "bounds": "[775,1680][968,1743]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8065,
-              "y_ratio": 0.8911
-            }
-          }
-        },
-        {
-          "element_id": "forages_39",
-          "bounds": "[775,1767][999,1830]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8213,
-              "y_ratio": 0.9365
-            }
-          }
-        },
-        {
-          "element_id": "brinjal_40",
-          "bounds": "[775,1854][970,1917]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8074,
-              "y_ratio": 0.9818
-            }
-          }
-        },
-        {
-          "element_id": "prodn__code_41",
-          "bounds": "[144,2070][974,2130]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5176,
-              "y_ratio": 1.0938
-            }
-          }
-        },
-        {
-          "element_id": "view_42",
-          "bounds": "[974,2034][1164,2166]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.9898,
-              "y_ratio": 1.0938
-            }
-          }
-        },
-        {
-          "element_id": "regions_43",
-          "bounds": "[96,2310][277,2379]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.1722,
-              "y_ratio": 1.2208
-            }
-          }
-        },
-        {
-          "element_id": "all_regions_44",
-          "bounds": "[96,2385][254,2427]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.162,
-              "y_ratio": 1.2531
-            }
-          }
-        },
-        {
-          "element_id": "nandyal_46",
-          "bounds": "[732,2457][958,2515]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7824,
-              "y_ratio": 1.2948
-            }
-          }
-        },
-        {
-          "element_id": "insights_47",
-          "bounds": "[135,2539][342,2722]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2204,
-              "y_ratio": 1.3698
-            }
-          }
-        },
-        {
-          "element_id": "my_fields_48",
-          "bounds": "[516,2539][748,2722]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5852,
-              "y_ratio": 1.3698
-            }
-          }
-        },
-        {
-          "element_id": "reports_49",
-          "bounds": "[922,2539][1125,2722]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.9472,
-              "y_ratio": 1.3698
-            }
-          }
-        }
-      ],
-      "navigation_path": [
-        {
-          "type": "click",
-          "selector": "~Field Corn",
-          "bounds": "[775,1419][1034,1482]"
-        }
-      ]
-    },
-    {
-      "node_id": "screen_934ea317ec0af99c58c122c98e788845",
-      "screen_name": "screen_934ea317ec0af99c58c122c98e788845",
-      "screen_type": "General",
-      "elements": [
-        {
-          "element_id": "el_framelayout_4",
-          "bounds": "[0,0][1260,2800]",
-          "clickable": true,
-          "element_type": "FrameLayout",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.FrameLayout\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.7292
-            }
-          }
-        },
-        {
-          "element_id": "el_button_9",
-          "bounds": "[24,120][168,264]",
-          "clickable": true,
-          "element_type": "Button",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.0889,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "my_account_10",
-          "bounds": "[168,155][1260,230]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.6611,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "t_11",
-          "bounds": "[101,381][139,471]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.1111,
-              "y_ratio": 0.2219
-            }
-          }
-        },
-        {
-          "element_id": "field_agent_12",
-          "bounds": "[228,426][431,483]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.3046,
-              "y_ratio": 0.2365
-            }
-          }
-        },
-        {
-          "element_id": "test_fa_1__internal__13",
-          "bounds": "[228,354][676,414]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.4185,
-              "y_ratio": 0.2
-            }
-          }
-        },
-        {
-          "element_id": "tpm_14",
-          "bounds": "[48,582][126,633]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.0806,
-              "y_ratio": 0.3161
-            }
-          }
-        },
-        {
-          "element_id": "field_agent_15",
-          "bounds": "[276,582][464,633]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.3426,
-              "y_ratio": 0.3161
-            }
-          }
-        },
-        {
-          "element_id": "fields_16",
-          "bounds": "[614,582][714,633]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.6148,
-              "y_ratio": 0.3161
-            }
-          }
-        },
-        {
-          "element_id": "1_17",
-          "bounds": "[75,645][98,702]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.0796,
-              "y_ratio": 0.3505
-            }
-          }
-        },
-        {
-          "element_id": "1_18",
-          "bounds": "[359,645][382,702]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.3426,
-              "y_ratio": 0.3505
-            }
-          }
-        },
-        {
-          "element_id": "284_19",
-          "bounds": "[630,645][699,702]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.6148,
-              "y_ratio": 0.3505
-            }
-          }
-        }
-      ],
-      "navigation_path": [
-        {
-          "type": "click",
-          "selector": "xpath=//android.widget.Button[@bounds='[0,108][168,276]']",
-          "bounds": "[0,108][168,276]"
-        },
-        {
-          "type": "click",
-          "selector": "~My Account",
-          "bounds": "[0,318][912,510]"
-        }
-      ]
-    },
-    {
-      "node_id": "screen_62130f7d22430aca6d6f1a1bfcfebe19",
-      "screen_name": "screen_62130f7d22430aca6d6f1a1bfcfebe19",
-      "screen_type": "General",
-      "elements": [
-        {
-          "element_id": "el_framelayout_4",
-          "bounds": "[0,0][1260,2800]",
-          "clickable": true,
-          "element_type": "FrameLayout",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.FrameLayout\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.7292
-            }
-          }
-        },
-        {
-          "element_id": "el_button_11",
-          "bounds": "[0,108][168,276]",
-          "clickable": true,
-          "element_type": "Button",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.0778,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "insights_12",
-          "bounds": "[168,162][1260,222]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.6611,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "view_by____field_count_clear_all_17",
-          "bounds": "[0,951][1260,1095]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.5328
-            }
-          }
-        },
-        {
-          "element_id": "total_fields_19",
-          "bounds": "[133,372][327,423]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.213,
-              "y_ratio": 0.2068
-            }
-          }
-        },
-        {
-          "element_id": "crop_20",
-          "bounds": "[590,372][670,423]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.2068
-            }
-          }
-        },
-        {
-          "element_id": "regions_21",
-          "bounds": "[962,372][1098,423]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.9537,
-              "y_ratio": 0.2068
-            }
-          }
-        },
-        {
-          "element_id": "284_25",
-          "bounds": "[193,567][267,627]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.213,
-              "y_ratio": 0.3109
-            }
-          }
-        },
-        {
-          "element_id": "6_26",
-          "bounds": "[618,567][642,627]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.3109
-            }
-          }
-        },
-        {
-          "element_id": "11_27",
-          "bounds": "[1005,567][1055,627]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.9537,
-              "y_ratio": 0.3109
-            }
-          }
-        },
-        {
-          "element_id": "418_21_acre_28",
-          "bounds": "[139,627][321,675]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.213,
-              "y_ratio": 0.3391
-            }
-          }
-        },
-        {
-          "element_id": "field_count_29",
-          "bounds": "[72,795][630,927]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.325,
-              "y_ratio": 0.4484
-            }
-          }
-        },
-        {
-          "element_id": "coverage__acres__30",
-          "bounds": "[630,795][1188,927]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8417,
-              "y_ratio": 0.4484
-            }
-          }
-        },
-        {
-          "element_id": "crop_31",
-          "bounds": "[96,1191][201,1260]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.137,
-              "y_ratio": 0.638
-            }
-          }
-        },
-        {
-          "element_id": "all_crops_32",
-          "bounds": "[96,1266][223,1308]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.1472,
-              "y_ratio": 0.6703
-            }
-          }
-        },
-        {
-          "element_id": "305_46_acres_33",
-          "bounds": "[114,1356][305,1395]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.1935,
-              "y_ratio": 0.7161
-            }
-          }
-        },
-        {
-          "element_id": "field_corn_35",
-          "bounds": "[775,1419][1034,1482]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.837,
-              "y_ratio": 0.7552
-            }
-          }
-        },
-        {
-          "element_id": "grain_sorghum_36",
-          "bounds": "[775,1506][1113,1569]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8741,
-              "y_ratio": 0.8005
-            }
-          }
-        },
-        {
-          "element_id": "forage_sorghum_37",
-          "bounds": "[775,1593][1140,1656]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8861,
-              "y_ratio": 0.8458
-            }
-          }
-        },
-        {
-          "element_id": "forages_38",
-          "bounds": "[775,1680][999,1743]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8213,
-              "y_ratio": 0.8911
-            }
-          }
-        },
-        {
-          "element_id": "paddy_39",
-          "bounds": "[775,1767][968,1830]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8065,
-              "y_ratio": 0.9365
-            }
-          }
-        },
-        {
-          "element_id": "brinjal_40",
-          "bounds": "[775,1854][970,1917]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8074,
-              "y_ratio": 0.9818
-            }
-          }
-        },
-        {
-          "element_id": "regions_41",
-          "bounds": "[96,2142][277,2211]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.1722,
-              "y_ratio": 1.1333
-            }
-          }
-        },
-        {
-          "element_id": "all_regions_42",
-          "bounds": "[96,2217][254,2259]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.162,
-              "y_ratio": 1.1656
-            }
-          }
-        },
-        {
-          "element_id": "nandyal_44",
-          "bounds": "[732,2289][958,2352]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7824,
-              "y_ratio": 1.2083
-            }
-          }
-        },
-        {
-          "element_id": "rajahmundry_45",
-          "bounds": "[732,2352][1041,2415]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8204,
-              "y_ratio": 1.2411
-            }
-          }
-        },
-        {
-          "element_id": "kurnool_46",
-          "bounds": "[732,2415][951,2478]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7787,
-              "y_ratio": 1.274
-            }
-          }
-        },
-        {
-          "element_id": "bagalakot_47",
-          "bounds": "[732,2478][989,2515]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7963,
-              "y_ratio": 1.3
-            }
-          }
-        },
-        {
-          "element_id": "insights_49",
-          "bounds": "[135,2539][342,2722]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2204,
-              "y_ratio": 1.3698
-            }
-          }
-        },
-        {
-          "element_id": "my_fields_50",
-          "bounds": "[516,2539][748,2722]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5852,
-              "y_ratio": 1.3698
-            }
-          }
-        },
-        {
-          "element_id": "reports_51",
-          "bounds": "[922,2539][1125,2722]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.9472,
-              "y_ratio": 1.3698
-            }
-          }
-        }
-      ],
-      "navigation_path": [
-        {
-          "type": "click",
-          "selector": "~Field Corn",
-          "bounds": "[775,1419][1034,1482]"
-        },
-        {
-          "type": "click",
-          "selector": "~Field Count",
-          "bounds": "[72,795][630,927]"
-        }
-      ]
-    },
-    {
-      "node_id": "screen_e298d1a4620ab2b71cfb305f76096c0b",
-      "screen_name": "screen_e298d1a4620ab2b71cfb305f76096c0b",
-      "screen_type": "General",
-      "elements": [
-        {
-          "element_id": "el_framelayout_4",
-          "bounds": "[0,0][1260,2800]",
-          "clickable": true,
-          "element_type": "FrameLayout",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.FrameLayout\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.7292
-            }
-          }
-        },
-        {
-          "element_id": "el_button_9",
-          "bounds": "[12,120][156,264]",
-          "clickable": true,
-          "element_type": "Button",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.0778,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "dispatch_history_10",
-          "bounds": "[216,156][1212,228]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.6611,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "166_12",
-          "bounds": "[228,360][323,438]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2546,
-              "y_ratio": 0.2078
-            }
-          }
-        },
-        {
-          "element_id": "dispatched_bags_13",
-          "bounds": "[228,438][510,489]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.3417,
-              "y_ratio": 0.2411
-            }
-          }
-        },
-        {
-          "element_id": "57_15",
-          "bounds": "[834,360][897,438]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8009,
-              "y_ratio": 0.2078
-            }
-          }
-        },
-        {
-          "element_id": "dispatched_acres_16",
-          "bounds": "[834,438][1127,489]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.9074,
-              "y_ratio": 0.2411
-            }
-          }
-        },
-        {
-          "element_id": "dispatched__6__17",
-          "bounds": "[78,573][485,690]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2602,
-              "y_ratio": 0.3286
-            }
-          }
-        },
-        {
-          "element_id": "100037_10_06_26_3_batches_62_0_kg_20",
-          "bounds": "[48,753][1212,1038]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.4661
-            }
-          }
-        },
-        {
-          "element_id": "100036_05_06_26_3_batches_56_0_kg_21",
-          "bounds": "[48,1074][1212,1359]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.6333
-            }
-          }
-        },
-        {
-          "element_id": "100035_04_06_26_1_batches_1_0_kg_22",
-          "bounds": "[48,1395][1212,1680]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.8005
-            }
-          }
-        },
-        {
-          "element_id": "100034_04_06_26_4_batches_91_0_kg_23",
-          "bounds": "[48,1716][1212,2001]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.9677
-            }
-          }
-        },
-        {
-          "element_id": "100033_02_06_26_4_batches_75_0_kg_24",
-          "bounds": "[48,2037][1212,2322]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 1.1349
-            }
-          }
-        },
-        {
-          "element_id": "100000_14_05_26_1_batches_24_0_kg_25",
-          "bounds": "[48,2358][1212,2643]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 1.3021
-            }
-          }
-        }
-      ],
-      "navigation_path": [
-        {
-          "type": "click",
-          "selector": "xpath=//android.widget.Button[@bounds='[0,108][168,276]']",
-          "bounds": "[0,108][168,276]"
-        },
-        {
-          "type": "click",
-          "selector": "~Dispatch History\n(6)",
-          "bounds": "[0,510][912,702]"
-        }
-      ]
-    },
-    {
-      "node_id": "screen_3f26afc02cb242122cd0b55e23d76863",
-      "screen_name": "screen_3f26afc02cb242122cd0b55e23d76863",
-      "screen_type": "General",
-      "elements": [
-        {
-          "element_id": "el_framelayout_4",
-          "bounds": "[0,0][1260,2800]",
-          "clickable": true,
-          "element_type": "FrameLayout",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.FrameLayout\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.7292
-            }
-          }
-        },
-        {
-          "element_id": "el_button_9",
-          "bounds": "[12,120][156,264]",
-          "clickable": true,
-          "element_type": "Button",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.0778,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "rsma_no__100035_10",
-          "bounds": "[216,161][661,224]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.4056,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "el_imageview_11",
-          "bounds": "[972,120][1116,264]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.9667,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "el_button_12",
-          "bounds": "[1116,120][1260,264]",
-          "clickable": true,
-          "element_type": "Button",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 1.1,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "rsma_no__100035_15",
-          "bounds": "[234,372][636,441]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.4028,
-              "y_ratio": 0.2115
-            }
-          }
-        },
-        {
-          "element_id": "04_06_26_16",
-          "bounds": "[261,480][406,528]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.3083,
-              "y_ratio": 0.2625
-            }
-          }
-        },
-        {
-          "element_id": "__17",
-          "bounds": "[445,480][456,528]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.4167,
-              "y_ratio": 0.2625
-            }
-          }
-        },
-        {
-          "element_id": "02_49_pm_18",
-          "bounds": "[495,480][641,528]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5259,
-              "y_ratio": 0.2625
-            }
-          }
-        },
-        {
-          "element_id": "__19",
-          "bounds": "[680,480][692,528]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.6352,
-              "y_ratio": 0.2625
-            }
-          }
-        },
-        {
-          "element_id": "2_bags_20",
-          "bounds": "[731,480][835,528]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.725,
-              "y_ratio": 0.2625
-            }
-          }
-        },
-        {
-          "element_id": "net_weight_21",
-          "bounds": "[48,585][514,645]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2602,
-              "y_ratio": 0.3203
-            }
-          }
-        },
-        {
-          "element_id": "1_0_kg_22",
-          "bounds": "[514,585][1212,645]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7991,
-              "y_ratio": 0.3203
-            }
-          }
-        },
-        {
-          "element_id": "total_bag_count_23",
-          "bounds": "[48,669][514,729]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2602,
-              "y_ratio": 0.3641
-            }
-          }
-        },
-        {
-          "element_id": "2_24",
-          "bounds": "[514,669][1212,729]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7991,
-              "y_ratio": 0.3641
-            }
-          }
-        },
-        {
-          "element_id": "from__37aaxca1074e1zi__25",
-          "bounds": "[216,816][659,867]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.4046,
-              "y_ratio": 0.438
-            }
-          }
-        },
-        {
-          "element_id": "test_tpm__internal___advanta_enterprises_ltd__allagadda__ap__26",
-          "bounds": "[216,879][1212,999]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.6611,
-              "y_ratio": 0.4891
-            }
-          }
-        },
-        {
-          "element_id": "to__37aaxca1074e1zi__27",
-          "bounds": "[216,1041][615,1092]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.3843,
-              "y_ratio": 0.5552
-            }
-          }
-        },
-        {
-          "element_id": "sy_no_545_1__pullalacheruvu_mandal__komarolu__prakasam__andhra_pradesh__523373_28",
-          "bounds": "[216,1104][1212,1224]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.6611,
-              "y_ratio": 0.6062
-            }
-          }
-        },
-        {
-          "element_id": "transport_details_29",
-          "bounds": "[48,1368][408,1431]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2111,
-              "y_ratio": 0.7286
-            }
-          }
-        },
-        {
-          "element_id": "transporter_30",
-          "bounds": "[48,1488][514,1548]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2602,
-              "y_ratio": 0.7906
-            }
-          }
-        },
-        {
-          "element_id": "gujju_tester_31",
-          "bounds": "[514,1488][1212,1548]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7991,
-              "y_ratio": 0.7906
-            }
-          }
-        },
-        {
-          "element_id": "truck_number_32",
-          "bounds": "[48,1590][514,1650]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2602,
-              "y_ratio": 0.8438
-            }
-          }
-        },
-        {
-          "element_id": "82_33",
-          "bounds": "[514,1590][1212,1650]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7991,
-              "y_ratio": 0.8438
-            }
-          }
-        },
-        {
-          "element_id": "truck_moisture_34",
-          "bounds": "[48,1692][514,1752]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2602,
-              "y_ratio": 0.8969
-            }
-          }
-        },
-        {
-          "element_id": "3_0___35",
-          "bounds": "[514,1692][1212,1752]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7991,
-              "y_ratio": 0.8969
-            }
-          }
-        },
-        {
-          "element_id": "truck_capacity_36",
-          "bounds": "[48,1794][514,1854]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2602,
-              "y_ratio": 0.95
-            }
-          }
-        },
-        {
-          "element_id": "72_0_mt_37",
-          "bounds": "[514,1794][1212,1854]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7991,
-              "y_ratio": 0.95
-            }
-          }
-        },
-        {
-          "element_id": "lr_number_38",
-          "bounds": "[48,1896][514,1956]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2602,
-              "y_ratio": 1.0031
-            }
-          }
-        },
-        {
-          "element_id": "822_39",
-          "bounds": "[514,1896][1212,1956]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7991,
-              "y_ratio": 1.0031
-            }
-          }
-        },
-        {
-          "element_id": "lr_date_40",
-          "bounds": "[48,1998][514,2058]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2602,
-              "y_ratio": 1.0562
-            }
-          }
-        },
-        {
-          "element_id": "04_06_26_41",
-          "bounds": "[514,1998][1212,2058]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7991,
-              "y_ratio": 1.0562
-            }
-          }
-        },
-        {
-          "element_id": "no__of_batches_42",
-          "bounds": "[48,2202][373,2271]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.1944,
-              "y_ratio": 1.1646
-            }
-          }
-        },
-        {
-          "element_id": "0012500b7a____field_corn__mz200___collapsed_44",
-          "bounds": "[51,2334][1209,2502]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 1.2594
-            }
-          }
-        }
-      ],
-      "navigation_path": [
-        {
-          "type": "click",
-          "selector": "xpath=//android.widget.Button[@bounds='[0,108][168,276]']",
-          "bounds": "[0,108][168,276]"
-        },
-        {
-          "type": "click",
-          "selector": "~Dispatch History\n(6)",
-          "bounds": "[0,510][912,702]"
-        },
-        {
-          "type": "click",
-          "selector": "xpath=//android.widget.FrameLayout[@bounds='[0,0][1260,2800]']",
-          "bounds": "[0,0][1260,2800]"
-        }
-      ]
-    },
-    {
-      "node_id": "screen_24d537129aff788deaf44dcb5af87113",
-      "screen_name": "screen_24d537129aff788deaf44dcb5af87113",
-      "screen_type": "General",
-      "elements": [
-        {
-          "element_id": "el_framelayout_4",
-          "bounds": "[0,0][1260,2800]",
-          "clickable": true,
-          "element_type": "FrameLayout",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.FrameLayout\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.7292
-            }
-          }
-        },
-        {
-          "element_id": "el_button_11",
-          "bounds": "[0,108][168,276]",
-          "clickable": true,
-          "element_type": "Button",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.0778,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "insights_12",
-          "bounds": "[168,162][1260,222]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.6611,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "brinjal_____nandyal_clear_all_17",
-          "bounds": "[0,951][1260,1095]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.5328
-            }
-          }
-        },
-        {
-          "element_id": "total_fields_19",
-          "bounds": "[133,372][327,423]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.213,
-              "y_ratio": 0.2068
-            }
-          }
-        },
-        {
-          "element_id": "crop_20",
-          "bounds": "[590,372][670,423]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.2068
-            }
-          }
-        },
-        {
-          "element_id": "regions_21",
-          "bounds": "[962,372][1098,423]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.9537,
-              "y_ratio": 0.2068
-            }
-          }
-        },
-        {
-          "element_id": "284_25",
-          "bounds": "[193,567][267,627]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.213,
-              "y_ratio": 0.3109
-            }
-          }
-        },
-        {
-          "element_id": "6_26",
-          "bounds": "[618,567][642,627]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.3109
-            }
-          }
-        },
-        {
-          "element_id": "11_27",
-          "bounds": "[1005,567][1055,627]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.9537,
-              "y_ratio": 0.3109
-            }
-          }
-        },
-        {
-          "element_id": "418_21_acre_28",
-          "bounds": "[139,627][321,675]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.213,
-              "y_ratio": 0.3391
-            }
-          }
-        },
-        {
-          "element_id": "field_count_29",
-          "bounds": "[72,795][630,927]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.325,
-              "y_ratio": 0.4484
-            }
-          }
-        },
-        {
-          "element_id": "coverage__acres__30",
-          "bounds": "[630,795][1188,927]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8417,
-              "y_ratio": 0.4484
-            }
-          }
-        },
-        {
-          "element_id": "crop_31",
-          "bounds": "[96,1191][201,1260]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.137,
-              "y_ratio": 0.638
-            }
-          }
-        },
-        {
-          "element_id": "brinjal_32",
-          "bounds": "[96,1266][185,1308]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.1296,
-              "y_ratio": 0.6703
-            }
-          }
-        },
-        {
-          "element_id": "0_01_acres_33",
-          "bounds": "[114,1356][268,1395]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.1769,
-              "y_ratio": 0.7161
-            }
-          }
-        },
-        {
-          "element_id": "field_corn_35",
-          "bounds": "[775,1419][1034,1482]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.837,
-              "y_ratio": 0.7552
-            }
-          }
-        },
-        {
-          "element_id": "forage_sorghum_36",
-          "bounds": "[775,1506][1140,1569]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8861,
-              "y_ratio": 0.8005
-            }
-          }
-        },
-        {
-          "element_id": "grain_sorghum_37",
-          "bounds": "[775,1593][1113,1656]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8741,
-              "y_ratio": 0.8458
-            }
-          }
-        },
-        {
-          "element_id": "paddy_38",
-          "bounds": "[775,1680][968,1743]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8065,
-              "y_ratio": 0.8911
-            }
-          }
-        },
-        {
-          "element_id": "forages_39",
-          "bounds": "[775,1767][999,1830]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8213,
-              "y_ratio": 0.9365
-            }
-          }
-        },
-        {
-          "element_id": "brinjal_40",
-          "bounds": "[775,1854][970,1917]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8074,
-              "y_ratio": 0.9818
-            }
-          }
-        },
-        {
-          "element_id": "prodn__code_41",
-          "bounds": "[144,2070][974,2130]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5176,
-              "y_ratio": 1.0938
-            }
-          }
-        },
-        {
-          "element_id": "view_42",
-          "bounds": "[974,2034][1164,2166]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.9898,
-              "y_ratio": 1.0938
-            }
-          }
-        },
-        {
-          "element_id": "regions_43",
-          "bounds": "[96,2318][277,2387]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.1722,
-              "y_ratio": 1.225
-            }
-          }
-        },
-        {
-          "element_id": "view_map_44",
-          "bounds": "[911,2310][1164,2394]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.9602,
-              "y_ratio": 1.225
-            }
-          }
-        },
-        {
-          "element_id": "nandyal_45",
-          "bounds": "[96,2400][210,2442]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.1417,
-              "y_ratio": 1.2609
-            }
-          }
-        },
-        {
-          "element_id": "nandyal_47",
-          "bounds": "[732,2472][959,2515]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7824,
-              "y_ratio": 1.2984
-            }
-          }
-        },
-        {
-          "element_id": "insights_48",
-          "bounds": "[135,2539][342,2722]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2204,
-              "y_ratio": 1.3698
-            }
-          }
-        },
-        {
-          "element_id": "my_fields_49",
-          "bounds": "[516,2539][748,2722]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5852,
-              "y_ratio": 1.3698
-            }
-          }
-        },
-        {
-          "element_id": "reports_50",
-          "bounds": "[922,2539][1125,2722]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.9472,
-              "y_ratio": 1.3698
-            }
-          }
-        }
-      ],
-      "navigation_path": [
-        {
-          "type": "click",
-          "selector": "~Field Corn",
-          "bounds": "[775,1419][1034,1482]"
-        },
-        {
-          "type": "click",
-          "selector": "~Brinjal",
-          "bounds": "[775,1854][970,1917]"
-        }
-      ]
-    },
-    {
-      "node_id": "screen_2ea57f86347efaffd2a5fadabcee684f",
-      "screen_name": "screen_2ea57f86347efaffd2a5fadabcee684f",
-      "screen_type": "General",
-      "elements": [
-        {
-          "element_id": "el_framelayout_4",
-          "bounds": "[0,0][1260,2800]",
-          "clickable": true,
-          "element_type": "FrameLayout",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.FrameLayout\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.7292
-            }
-          }
-        },
-        {
-          "element_id": "el_button_9",
-          "bounds": "[12,120][156,264]",
-          "clickable": true,
-          "element_type": "Button",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.0778,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "check_in_activity_10",
-          "bounds": "[168,150][1260,234]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.6611,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "monthly_11",
-          "bounds": "[60,327][621,423]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.3148,
-              "y_ratio": 0.1953
-            }
-          }
-        },
-        {
-          "element_id": "season_12",
-          "bounds": "[639,327][1200,423]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8509,
-              "y_ratio": 0.1953
-            }
-          }
-        },
-        {
-          "element_id": "showing__june_2026_13",
-          "bounds": "[36,450][1224,510]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.25
-            }
-          }
-        },
-        {
-          "element_id": "my_metrics_jun__01_15__total_fields_0_visited_0_not_visited_0_check_ins_0_16",
-          "bounds": "[0,663][1260,1494]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.5615
-            }
-          }
-        },
-        {
-          "element_id": "june__2026_sun_mon_tue_wed_thu_fri_sat_18",
-          "bounds": "[0,1542][1260,2776]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 1.1245
-            }
-          }
-        },
-        {
-          "element_id": "el_button_19",
-          "bounds": "[36,1548][180,1692]",
-          "clickable": true,
-          "element_type": "Button",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.1,
-              "y_ratio": 0.8438
-            }
-          }
-        },
-        {
-          "element_id": "el_button_20",
-          "bounds": "[1080,1548][1224,1692]",
-          "clickable": true,
-          "element_type": "Button",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 1.0667,
-              "y_ratio": 0.8438
-            }
-          }
-        },
-        {
-          "element_id": "1_24",
-          "bounds": "[218,1850][361,2054]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2676,
-              "y_ratio": 1.0167
-            }
-          }
-        },
-        {
-          "element_id": "2_25",
-          "bounds": "[388,1850][531,2054]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.425,
-              "y_ratio": 1.0167
-            }
-          }
-        },
-        {
-          "element_id": "3_26",
-          "bounds": "[558,1850][702,2054]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 1.0167
-            }
-          }
-        },
-        {
-          "element_id": "4_27",
-          "bounds": "[729,1850][872,2054]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7407,
-              "y_ratio": 1.0167
-            }
-          }
-        },
-        {
-          "element_id": "5_28",
-          "bounds": "[899,1850][1042,2054]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8981,
-              "y_ratio": 1.0167
-            }
-          }
-        },
-        {
-          "element_id": "6_29",
-          "bounds": "[1069,1850][1212,2054]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 1.0556,
-              "y_ratio": 1.0167
-            }
-          }
-        },
-        {
-          "element_id": "7_30",
-          "bounds": "[48,2099][191,2303]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.1102,
-              "y_ratio": 1.1464
-            }
-          }
-        },
-        {
-          "element_id": "8_31",
-          "bounds": "[218,2099][361,2303]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2676,
-              "y_ratio": 1.1464
-            }
-          }
-        },
-        {
-          "element_id": "9_32",
-          "bounds": "[388,2099][531,2303]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.425,
-              "y_ratio": 1.1464
-            }
-          }
-        },
-        {
-          "element_id": "10_33",
-          "bounds": "[558,2099][702,2303]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 1.1464
-            }
-          }
-        },
-        {
-          "element_id": "11_34",
-          "bounds": "[729,2099][872,2303]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7407,
-              "y_ratio": 1.1464
-            }
-          }
-        },
-        {
-          "element_id": "12_35",
-          "bounds": "[899,2099][1042,2303]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8981,
-              "y_ratio": 1.1464
-            }
-          }
-        },
-        {
-          "element_id": "13_36",
-          "bounds": "[1069,2099][1212,2303]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 1.0556,
-              "y_ratio": 1.1464
-            }
-          }
-        },
-        {
-          "element_id": "14_37",
-          "bounds": "[48,2348][191,2553]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.1102,
-              "y_ratio": 1.276
-            }
-          }
-        },
-        {
-          "element_id": "15_38",
-          "bounds": "[218,2348][361,2553]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2676,
-              "y_ratio": 1.276
-            }
-          }
-        },
-        {
-          "element_id": "16_39",
-          "bounds": "[388,2348][531,2553]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.425,
-              "y_ratio": 1.276
-            }
-          }
-        },
-        {
-          "element_id": "17_40",
-          "bounds": "[558,2348][702,2553]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 1.276
-            }
-          }
-        },
-        {
-          "element_id": "18_41",
-          "bounds": "[729,2348][872,2553]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7407,
-              "y_ratio": 1.276
-            }
-          }
-        },
-        {
-          "element_id": "19_42",
-          "bounds": "[899,2348][1042,2553]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8981,
-              "y_ratio": 1.276
-            }
-          }
-        },
-        {
-          "element_id": "20_43",
-          "bounds": "[1069,2348][1212,2553]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 1.0556,
-              "y_ratio": 1.276
-            }
-          }
-        },
-        {
-          "element_id": "21_44",
-          "bounds": "[48,2598][191,2776]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.1102,
-              "y_ratio": 1.3995
-            }
-          }
-        },
-        {
-          "element_id": "22_45",
-          "bounds": "[218,2598][361,2776]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2676,
-              "y_ratio": 1.3995
-            }
-          }
-        },
-        {
-          "element_id": "23_46",
-          "bounds": "[388,2598][531,2776]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.425,
-              "y_ratio": 1.3995
-            }
-          }
-        },
-        {
-          "element_id": "24_47",
-          "bounds": "[558,2598][702,2776]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 1.3995
-            }
-          }
-        },
-        {
-          "element_id": "25_48",
-          "bounds": "[729,2598][872,2776]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7407,
-              "y_ratio": 1.3995
-            }
-          }
-        },
-        {
-          "element_id": "26_49",
-          "bounds": "[899,2598][1042,2776]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8981,
-              "y_ratio": 1.3995
-            }
-          }
-        },
-        {
-          "element_id": "27_50",
-          "bounds": "[1069,2598][1212,2776]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 1.0556,
-              "y_ratio": 1.3995
-            }
-          }
-        }
-      ],
-      "navigation_path": [
-        {
-          "type": "click",
-          "selector": "xpath=//android.widget.Button[@bounds='[0,108][168,276]']",
-          "bounds": "[0,108][168,276]"
-        },
-        {
-          "type": "click",
-          "selector": "~Check-in History",
-          "bounds": "[0,702][912,894]"
-        }
-      ]
-    },
-    {
-      "node_id": "screen_3100a771a1c11e443de091aad25f95d7",
-      "screen_name": "screen_3100a771a1c11e443de091aad25f95d7",
-      "screen_type": "General",
-      "elements": [
-        {
-          "element_id": "el_framelayout_4",
-          "bounds": "[0,0][1260,2800]",
-          "clickable": true,
-          "element_type": "FrameLayout",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.FrameLayout\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.7292
-            }
-          }
-        },
-        {
-          "element_id": "el_button_11",
-          "bounds": "[0,108][168,276]",
-          "clickable": true,
-          "element_type": "Button",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.0778,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "insights_12",
-          "bounds": "[168,162][1260,222]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.6611,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "forage_sorghum_clear_all_17",
-          "bounds": "[0,951][1260,1095]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.5328
-            }
-          }
-        },
-        {
-          "element_id": "total_fields_19",
-          "bounds": "[133,372][327,423]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.213,
-              "y_ratio": 0.2068
-            }
-          }
-        },
-        {
-          "element_id": "crop_20",
-          "bounds": "[590,372][670,423]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.2068
-            }
-          }
-        },
-        {
-          "element_id": "regions_21",
-          "bounds": "[962,372][1098,423]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.9537,
-              "y_ratio": 0.2068
-            }
-          }
-        },
-        {
-          "element_id": "284_25",
-          "bounds": "[193,567][267,627]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.213,
-              "y_ratio": 0.3109
-            }
-          }
-        },
-        {
-          "element_id": "6_26",
-          "bounds": "[618,567][642,627]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.3109
-            }
-          }
-        },
-        {
-          "element_id": "11_27",
-          "bounds": "[1005,567][1055,627]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.9537,
-              "y_ratio": 0.3109
-            }
-          }
-        },
-        {
-          "element_id": "418_21_acre_28",
-          "bounds": "[139,627][321,675]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.213,
-              "y_ratio": 0.3391
-            }
-          }
-        },
-        {
-          "element_id": "field_count_29",
-          "bounds": "[72,795][630,927]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.325,
-              "y_ratio": 0.4484
-            }
-          }
-        },
-        {
-          "element_id": "coverage__acres__30",
-          "bounds": "[630,795][1188,927]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8417,
-              "y_ratio": 0.4484
-            }
-          }
-        },
-        {
-          "element_id": "crop_31",
-          "bounds": "[96,1191][201,1260]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.137,
-              "y_ratio": 0.638
-            }
-          }
-        },
-        {
-          "element_id": "forage_sorghum_32",
-          "bounds": "[96,1266][327,1308]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.1954,
-              "y_ratio": 0.6703
-            }
-          }
-        },
-        {
-          "element_id": "32_fields_33",
-          "bounds": "[114,1356][248,1395]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.1676,
-              "y_ratio": 0.7161
-            }
-          }
-        },
-        {
-          "element_id": "field_corn_35",
-          "bounds": "[775,1419][1034,1482]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.837,
-              "y_ratio": 0.7552
-            }
-          }
-        },
-        {
-          "element_id": "grain_sorghum_36",
-          "bounds": "[775,1506][1113,1569]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8741,
-              "y_ratio": 0.8005
-            }
-          }
-        },
-        {
-          "element_id": "forage_sorghum_37",
-          "bounds": "[775,1593][1140,1656]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8861,
-              "y_ratio": 0.8458
-            }
-          }
-        },
-        {
-          "element_id": "forages_38",
-          "bounds": "[775,1680][999,1743]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8213,
-              "y_ratio": 0.8911
-            }
-          }
-        },
-        {
-          "element_id": "paddy_39",
-          "bounds": "[775,1767][968,1830]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8065,
-              "y_ratio": 0.9365
-            }
-          }
-        },
-        {
-          "element_id": "brinjal_40",
-          "bounds": "[775,1854][970,1917]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.8074,
-              "y_ratio": 0.9818
-            }
-          }
-        },
-        {
-          "element_id": "prodn__code_41",
-          "bounds": "[144,2070][978,2130]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5194,
-              "y_ratio": 1.0938
-            }
-          }
-        },
-        {
-          "element_id": "hide_42",
-          "bounds": "[978,2034][1164,2166]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.9917,
-              "y_ratio": 1.0938
-            }
-          }
-        },
-        {
-          "element_id": "32_44",
-          "bounds": "[634,2220][669,2262]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.6028,
-              "y_ratio": 1.1672
-            }
-          }
-        },
-        {
-          "element_id": "insights_45",
-          "bounds": "[135,2539][342,2722]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2204,
-              "y_ratio": 1.3698
-            }
-          }
-        },
-        {
-          "element_id": "my_fields_46",
-          "bounds": "[516,2539][748,2722]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5852,
-              "y_ratio": 1.3698
-            }
-          }
-        },
-        {
-          "element_id": "reports_47",
-          "bounds": "[922,2539][1125,2722]",
-          "clickable": true,
-          "element_type": "ImageView",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.9472,
-              "y_ratio": 1.3698
-            }
-          }
-        }
-      ],
-      "navigation_path": [
-        {
-          "type": "click",
-          "selector": "~Field Corn",
-          "bounds": "[775,1419][1034,1482]"
-        },
-        {
-          "type": "click",
-          "selector": "~View",
-          "bounds": "[974,2034][1164,2166]"
-        }
-      ]
-    },
-    {
-      "node_id": "screen_e364f68b3c1347969aff48c2c64e2370",
-      "screen_name": "screen_e364f68b3c1347969aff48c2c64e2370",
-      "screen_type": "General",
-      "elements": [
-        {
-          "element_id": "el_framelayout_4",
-          "bounds": "[0,0][1260,2800]",
-          "clickable": true,
-          "element_type": "FrameLayout",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.FrameLayout\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.7292
-            }
-          }
-        },
-        {
-          "element_id": "el_button_9",
-          "bounds": "[12,120][156,264]",
-          "clickable": true,
-          "element_type": "Button",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.0778,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "pending_fields__20__10",
-          "bounds": "[216,158][1212,227]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.6611,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "90032077_b__agraharam___kurnool___vivek_view_request_13",
-          "bounds": "[0,276][1260,489]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.199
-            }
-          }
-        },
-        {
-          "element_id": "90032161_adoni___kurnool___testmn_view_request_14",
-          "bounds": "[0,495][1260,708]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.313
-            }
-          }
-        },
-        {
-          "element_id": "90032162_alwala___kurnool___hjejejs_view_request_15",
-          "bounds": "[0,714][1260,927]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.4271
-            }
-          }
-        },
-        {
-          "element_id": "90032170_d_kottala___nandyal___trsg_view_request_16",
-          "bounds": "[0,933][1260,1146]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.5411
-            }
-          }
-        },
-        {
-          "element_id": "90032171_testing___nandyal___uehshs_view_request_17",
-          "bounds": "[0,1152][1260,1365]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.6552
-            }
-          }
-        },
-        {
-          "element_id": "90032172_allagadda___nandyal___testing_field_details__view_request_18",
-          "bounds": "[0,1371][1260,1584]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.7693
-            }
-          }
-        },
-        {
-          "element_id": "90032174_allagadda___nandyal___yut_view_request_19",
-          "bounds": "[0,1590][1260,1803]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.8833
-            }
-          }
-        },
-        {
-          "element_id": "90032176_kulumala___nandyal___ghyffft_view_request_20",
-          "bounds": "[0,1809][1260,2022]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.9974
-            }
-          }
-        },
-        {
-          "element_id": "90032202_bailuppala___kurnool___kundan_view_request_21",
-          "bounds": "[0,2028][1260,2241]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 1.1115
-            }
-          }
-        },
-        {
-          "element_id": "90032214_mudumala___nandyal___yhfg_view_request_22",
-          "bounds": "[0,2247][1260,2460]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 1.2255
-            }
-          }
-        },
-        {
-          "element_id": "90032221_adoni___kurnool___test_grower_view_request_23",
-          "bounds": "[0,2466][1260,2679]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 1.3396
-            }
-          }
-        },
-        {
-          "element_id": "90032231_kovvada___rajahmundry___tambabathula_naga_devi_view_request_24",
-          "bounds": "[0,2685][1260,2800]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 1.4281
-            }
-          }
-        }
-      ],
-      "navigation_path": [
-        {
-          "type": "click",
-          "selector": "xpath=//android.widget.Button[@bounds='[0,108][168,276]']",
-          "bounds": "[0,108][168,276]"
-        },
-        {
-          "type": "click",
-          "selector": "~Pending Fields",
-          "bounds": "[0,894][912,1086]"
-        }
-      ]
-    },
-    {
-      "node_id": "screen_2ad050300b3a5b95ae4cce06633c30cc",
-      "screen_name": "screen_2ad050300b3a5b95ae4cce06633c30cc",
-      "screen_type": "General",
-      "elements": [
-        {
-          "element_id": "el_framelayout_4",
-          "bounds": "[0,0][1260,2800]",
-          "clickable": true,
-          "element_type": "FrameLayout",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.FrameLayout\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.7292
-            }
-          }
-        },
-        {
-          "element_id": "el_button_9",
-          "bounds": "[12,120][156,264]",
-          "clickable": true,
-          "element_type": "Button",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.Button\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.0778,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "90032172_10",
-          "bounds": "[216,158][489,227]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.3259,
-              "y_ratio": 0.1
-            }
-          }
-        },
-        {
-          "element_id": "field_area__0_01_acres_11",
-          "bounds": "[84,348][433,390]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.2389,
-              "y_ratio": 0.1922
+              "x_ratio": 0.3324,
+              "y_ratio": 0.1266
             }
           }
         },
         {
           "element_id": "el_view_12",
-          "bounds": "[0,276][1260,1270]",
+          "bounds": "[0,327][1344,2992]",
           "clickable": true,
           "element_type": "View",
           "selectors": {
@@ -4413,59 +673,44 @@
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.4026
+              "x_ratio": 0.6222,
+              "y_ratio": 0.8641
             }
           }
         },
         {
-          "element_id": "el_framelayout_13",
-          "bounds": "[0,276][1260,1270]",
+          "element_id": "el_edittext_13",
+          "bounds": "[156,357][1278,480]",
           "clickable": true,
-          "element_type": "FrameLayout",
+          "element_type": "EditText",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.widget.FrameLayout\")"
+            "uiautomator": "new UiSelector().className(\"android.widget.EditText\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.4026
+              "x_ratio": 0.6639,
+              "y_ratio": 0.2177
             }
           }
         },
         {
-          "element_id": "google_map_15",
-          "bounds": "[0,276][1260,1270]",
+          "element_id": "today_s_highlights_birthday_count__0_lunch__na_dinner__na_16",
+          "bounds": "[30,510][1314,951]",
           "clickable": true,
-          "element_type": "TextureView",
+          "element_type": "ImageView",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.TextureView\")"
+            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.5833,
-              "y_ratio": 0.4026
+              "x_ratio": 0.6222,
+              "y_ratio": 0.3802
             }
           }
         },
         {
-          "element_id": "field_details_19",
-          "bounds": "[48,1354][313,1411]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.1667,
-              "y_ratio": 0.7198
-            }
-          }
-        },
-        {
-          "element_id": "field_number_20",
-          "bounds": "[48,1474][438,1522]",
+          "element_id": "projects_working_on_the_customer_project_status__working_on_the_customer_project_17",
+          "bounds": "[30,951][1314,1317]",
           "clickable": true,
           "element_type": "View",
           "selectors": {
@@ -4473,14 +718,14 @@
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.225,
-              "y_ratio": 0.7802
+              "x_ratio": 0.6222,
+              "y_ratio": 0.5906
             }
           }
         },
         {
-          "element_id": "90032172_21",
-          "bounds": "[438,1474][1212,1522]",
+          "element_id": "drs_free__2_additional__0_billable__0_unbillable__0_total__2_18",
+          "bounds": "[30,1317][1314,1830]",
           "clickable": true,
           "element_type": "View",
           "selectors": {
@@ -4488,14 +733,29 @@
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.7639,
-              "y_ratio": 0.7802
+              "x_ratio": 0.6222,
+              "y_ratio": 0.8193
             }
           }
         },
         {
-          "element_id": "grower_name_22",
-          "bounds": "[48,1570][438,1618]",
+          "element_id": "el_imageview_19",
+          "bounds": "[1194,1371][1266,1443]",
+          "clickable": true,
+          "element_type": "ImageView",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 1.1389,
+              "y_ratio": 0.7328
+            }
+          }
+        },
+        {
+          "element_id": "drs_leave_details_20",
+          "bounds": "[78,1695][444,1752]",
           "clickable": true,
           "element_type": "View",
           "selectors": {
@@ -4503,323 +763,53 @@
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.225,
-              "y_ratio": 0.8302
+              "x_ratio": 0.2417,
+              "y_ratio": 0.8974
             }
           }
         },
         {
-          "element_id": "testing_field_details_23",
-          "bounds": "[438,1570][1212,1618]",
+          "element_id": "service_requests_open__96_closed__20_in_progress__0_reopen__0_won_t_fixed__0_total__116_21",
+          "bounds": "[30,1830][1314,2268]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "ImageView",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.7639,
-              "y_ratio": 0.8302
+              "x_ratio": 0.6222,
+              "y_ratio": 1.0672
             }
           }
         },
         {
-          "element_id": "organizer_name_24",
-          "bounds": "[48,1666][438,1714]",
+          "element_id": "assets_asset_id__lt_233_brand__dell_assigned_on__08_04_2026_22",
+          "bounds": "[30,2268][1314,2706]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "ImageView",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.225,
-              "y_ratio": 0.8802
+              "x_ratio": 0.6222,
+              "y_ratio": 1.2953
             }
           }
         },
         {
-          "element_id": "1234567890_25",
-          "bounds": "[438,1666][1212,1714]",
+          "element_id": "leave_details_total_leaves_allocated__10_leaves_availed__10_leave_balance__0_23",
+          "bounds": "[30,2706][1314,2992]",
           "clickable": true,
-          "element_type": "View",
+          "element_type": "ImageView",
           "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+            "uiautomator": "new UiSelector().className(\"android.widget.ImageView\")"
           },
           "vision_fallback_coordinates": {
             "tap_by_ratio": {
-              "x_ratio": 0.7639,
-              "y_ratio": 0.8802
-            }
-          }
-        },
-        {
-          "element_id": "village_26",
-          "bounds": "[48,1762][438,1810]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.225,
-              "y_ratio": 0.9302
-            }
-          }
-        },
-        {
-          "element_id": "allagadda_27",
-          "bounds": "[438,1762][1212,1810]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7639,
-              "y_ratio": 0.9302
-            }
-          }
-        },
-        {
-          "element_id": "region_28",
-          "bounds": "[48,1858][438,1906]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.225,
-              "y_ratio": 0.9802
-            }
-          }
-        },
-        {
-          "element_id": "nandyal_29",
-          "bounds": "[438,1858][1212,1906]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7639,
-              "y_ratio": 0.9802
-            }
-          }
-        },
-        {
-          "element_id": "tpm_30",
-          "bounds": "[48,1954][438,2002]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.225,
-              "y_ratio": 1.0302
-            }
-          }
-        },
-        {
-          "element_id": "test_tpm__internal__31",
-          "bounds": "[438,1954][1212,2002]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7639,
-              "y_ratio": 1.0302
-            }
-          }
-        },
-        {
-          "element_id": "regional_manager_32",
-          "bounds": "[48,2050][438,2098]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.225,
-              "y_ratio": 1.0802
-            }
-          }
-        },
-        {
-          "element_id": "test_rm__internal__33",
-          "bounds": "[438,2050][1212,2098]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7639,
-              "y_ratio": 1.0802
-            }
-          }
-        },
-        {
-          "element_id": "geofence_area_34",
-          "bounds": "[48,2146][438,2194]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.225,
-              "y_ratio": 1.1302
-            }
-          }
-        },
-        {
-          "element_id": "0_01_acres_35",
-          "bounds": "[438,2146][1212,2194]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7639,
-              "y_ratio": 1.1302
-            }
-          }
-        },
-        {
-          "element_id": "crop_36",
-          "bounds": "[48,2242][438,2290]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.225,
-              "y_ratio": 1.1802
-            }
-          }
-        },
-        {
-          "element_id": "paddy_37",
-          "bounds": "[438,2242][1212,2290]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7639,
-              "y_ratio": 1.1802
-            }
-          }
-        },
-        {
-          "element_id": "production_code_38",
-          "bounds": "[48,2338][438,2386]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.225,
-              "y_ratio": 1.2302
-            }
-          }
-        },
-        {
-          "element_id": "5r012_39",
-          "bounds": "[438,2338][1212,2386]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7639,
-              "y_ratio": 1.2302
-            }
-          }
-        },
-        {
-          "element_id": "fa_name_40",
-          "bounds": "[48,2434][438,2482]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.225,
-              "y_ratio": 1.2802
-            }
-          }
-        },
-        {
-          "element_id": "test_fa_1__internal__41",
-          "bounds": "[438,2434][1212,2482]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7639,
-              "y_ratio": 1.2802
-            }
-          }
-        },
-        {
-          "element_id": "sowing_time_42",
-          "bounds": "[48,2530][438,2578]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.225,
-              "y_ratio": 1.3302
-            }
-          }
-        },
-        {
-          "element_id": "20_1_2026_43",
-          "bounds": "[438,2530][1212,2578]",
-          "clickable": true,
-          "element_type": "View",
-          "selectors": {
-            "uiautomator": "new UiSelector().className(\"android.view.View\")"
-          },
-          "vision_fallback_coordinates": {
-            "tap_by_ratio": {
-              "x_ratio": 0.7639,
-              "y_ratio": 1.3302
+              "x_ratio": 0.6222,
+              "y_ratio": 1.4839
             }
           }
         }
@@ -4827,18 +817,263 @@
       "navigation_path": [
         {
           "type": "click",
-          "selector": "xpath=//android.widget.Button[@bounds='[0,108][168,276]']",
-          "bounds": "[0,108][168,276]"
+          "selector": "xpath=//android.view.View[@text=\"Coupons & offers\"]",
+          "bounds": "[45,1976][1035,2033]"
+        }
+      ]
+    },
+    {
+      "node_id": "screen_1e3e64860eb11fd0294aff737b2009fd",
+      "screen_name": "screen_1e3e64860eb11fd0294aff737b2009fd",
+      "screen_type": "General",
+      "elements": [
+        {
+          "element_id": "el_viewgroup_22",
+          "bounds": "[139,642][373,876]",
+          "clickable": true,
+          "element_type": "ViewGroup",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.237,
+              "y_ratio": 0.3953
+            }
+          }
+        },
+        {
+          "element_id": "el_viewgroup_24",
+          "bounds": "[555,642][789,876]",
+          "clickable": true,
+          "element_type": "ViewGroup",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.6222,
+              "y_ratio": 0.3953
+            }
+          }
+        },
+        {
+          "element_id": "el_viewgroup_26",
+          "bounds": "[971,642][1205,876]",
+          "clickable": true,
+          "element_type": "ViewGroup",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 1.0074,
+              "y_ratio": 0.3953
+            }
+          }
+        },
+        {
+          "element_id": "el_viewgroup_31",
+          "bounds": "[139,1068][373,1302]",
+          "clickable": true,
+          "element_type": "ViewGroup",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.237,
+              "y_ratio": 0.6172
+            }
+          }
+        },
+        {
+          "element_id": "el_viewgroup_33",
+          "bounds": "[555,1068][789,1302]",
+          "clickable": true,
+          "element_type": "ViewGroup",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.view.ViewGroup\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.6222,
+              "y_ratio": 0.6172
+            }
+          }
+        }
+      ],
+      "navigation_path": [
+        {
+          "type": "click",
+          "selector": "xpath=//android.view.View[@text=\"Coupons & offers\"]",
+          "bounds": "[45,1976][1035,2033]"
+        },
+        {
+          "type": "type",
+          "selector": "xpath=//android.widget.EditText[@bounds='[156,357][1278,480]']",
+          "bounds": "[156,357][1278,480]",
+          "value": "920"
+        }
+      ]
+    },
+    {
+      "node_id": "screen_f19b823d3ad75b8b7e7a2507e86ea52c",
+      "screen_name": "screen_f19b823d3ad75b8b7e7a2507e86ea52c",
+      "screen_type": "General",
+      "elements": [
+        {
+          "element_id": "legal_button_19",
+          "bounds": "[289,629][792,821]",
+          "clickable": true,
+          "element_type": "View",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.5,
+              "y_ratio": 0.3776
+            }
+          }
+        },
+        {
+          "element_id": "secondary_slot_icon_35",
+          "bounds": "[936,108][1080,252]",
+          "clickable": true,
+          "element_type": "View",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.9333,
+              "y_ratio": 0.0938
+            }
+          }
+        },
+        {
+          "element_id": "el_view_44",
+          "bounds": "[0,2016][1080,2232]",
+          "clickable": true,
+          "element_type": "View",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.5,
+              "y_ratio": 1.1062
+            }
+          }
+        },
+        {
+          "element_id": "el_view_52",
+          "bounds": "[744,2052][888,2196]",
+          "clickable": true,
+          "element_type": "View",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.7556,
+              "y_ratio": 1.1062
+            }
+          }
+        },
+        {
+          "element_id": "el_view_55",
+          "bounds": "[912,2052][1056,2196]",
+          "clickable": true,
+          "element_type": "View",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.view.View\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.9111,
+              "y_ratio": 1.1062
+            }
+          }
+        },
+        {
+          "element_id": "home_63",
+          "bounds": "[0,2232][270,2304]",
+          "clickable": true,
+          "element_type": "FrameLayout",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.widget.FrameLayout\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.125,
+              "y_ratio": 1.1812
+            }
+          }
+        },
+        {
+          "element_id": "library_68",
+          "bounds": "[270,2232][540,2304]",
+          "clickable": true,
+          "element_type": "FrameLayout",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.widget.FrameLayout\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.375,
+              "y_ratio": 1.1812
+            }
+          }
+        },
+        {
+          "element_id": "discover_73",
+          "bounds": "[540,2232][810,2304]",
+          "clickable": true,
+          "element_type": "FrameLayout",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.widget.FrameLayout\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.625,
+              "y_ratio": 1.1812
+            }
+          }
+        },
+        {
+          "element_id": "profile_78",
+          "bounds": "[810,2232][1080,2304]",
+          "clickable": true,
+          "element_type": "FrameLayout",
+          "selectors": {
+            "uiautomator": "new UiSelector().className(\"android.widget.FrameLayout\")"
+          },
+          "vision_fallback_coordinates": {
+            "tap_by_ratio": {
+              "x_ratio": 0.875,
+              "y_ratio": 1.1812
+            }
+          }
+        }
+      ],
+      "navigation_path": [
+        {
+          "type": "click",
+          "selector": "xpath=//android.view.View[@text=\"Coupons & offers\"]",
+          "bounds": "[45,1976][1035,2033]"
+        },
+        {
+          "type": "type",
+          "selector": "xpath=//android.widget.EditText[@bounds='[156,357][1278,480]']",
+          "bounds": "[156,357][1278,480]",
+          "value": "920"
         },
         {
           "type": "click",
-          "selector": "~Pending Fields",
-          "bounds": "[0,894][912,1086]"
-        },
-        {
-          "type": "click",
-          "selector": "xpath=//android.widget.FrameLayout[@bounds='[0,0][1260,2800]']",
-          "bounds": "[0,0][1260,2800]"
+          "selector": "xpath=//android.view.ViewGroup[@bounds='[139,642][373,876]']",
+          "bounds": "[139,642][373,876]"
         }
       ]
     }
